@@ -1,0 +1,78 @@
+.chat-functions {
+  position: absolute;
+  width: 0px;
+  min-height: 92.6vh;
+  max-height: 100vh;
+  top: 0;
+  right: 0;
+  transition: opacity 0.3s ease;
+  background: rgba(41, 45, 50, 0);
+  transition: width 0.3s ease, background 0.3s ease;
+  z-index: 3;
+
+  .procurar {
+    visibility: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+}
+
+.chat-functions.ativo {
+  width: 360px;
+  border-left: 1px solid #393e44;
+  background: #292d32;
+
+  .procurar {
+    visibility: 1;
+    opacity: 1;
+  }
+}
+
+.procurar {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  height: 65px;
+  align-items: center;
+  gap: 12px;
+  background-color: transparent;
+  border-bottom: 1px solid #393e44;
+}
+
+.procurar input {
+  background: transparent;
+  color: #7c878e;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.14px;
+  min-width: 210px;
+  margin-right: 20px;
+}
+
+.procurar input:focus {
+  outline: none;
+}
+
+.toggle-functions-showback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: max-content;
+  height: max-content;
+  background: transparent;
+}
+
+.toggle-functions {
+  width: 24px;
+  height: 24px;
+  margin: 20px 0px 20px 28px;
+  padding: 8px;
+  background: transparent;
+  color: #7c878e;
+  cursor: pointer;
+  transform: rotate(180deg);
+}
