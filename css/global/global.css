@@ -5,6 +5,11 @@
   overflow-y: hidden;
 }
 
+*:active {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
 :root {
   --borderhover1: #e3e9ee;
 }
