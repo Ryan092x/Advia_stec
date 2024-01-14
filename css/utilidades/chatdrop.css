@@ -1,0 +1,81 @@
+.icon-chat-drop {
+  --opacity: 1;
+  display: none;
+  position: absolute;
+  width: calc(100% - 24px);
+  left: 12px;
+  right: 12px;
+  height: max-content;
+  background-color: rgb(24 27 31 / var(--opacity));
+  margin-top: 0.15rem;
+  border-radius: 1rem;
+  z-index: 5;
+}
+
+.icon-chat-drop.ativo {
+  display: block;
+}
+
+.chats-recent {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.chats-recent li:nth-child(1) {
+  margin-top: 20px;
+}
+
+.chats-recent li:last-child {
+  margin-bottom: 20px;
+}
+
+.chats-recent li a {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px;
+  box-sizing: border-box;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 1rem;
+  transition: background 0.3s ease;
+}
+
+.chats-recent a.ativo {
+  background: rgba(41, 45, 50, 0.7);
+  box-sizing: border-box;
+  border: 0 solid #e5e7eb;
+  border-radius: 1rem;
+}
+
+.chats-recent a:hover {
+  background: rgba(41,45,50,.7);
+  box-sizing: border-box;
+  border: 0 solid #e5e7eb;
+  border-radius: 1rem;
+}
+
+
+.chats-recent li a p {
+  white-space: nowrap;
+  color: #fcfdfe;
+  width: calc(100% - 2.5rem);
+  font-weight: 600;
+  line-height: 24px;
+  background: transparent;
+}
+
+.dec-chatdrop {
+  display: flex;
+  padding: 6px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #4bab71;
+}
+
+.dec-chatdrop svg {
+  background: none;
+}

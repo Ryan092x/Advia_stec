@@ -1,0 +1,128 @@
+.settings-options {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background: transparent;
+  width: 100%;
+  height: max-content;
+}
+
+.editar-perfil {
+  display: flex;
+  width: 100%;
+  height: max-content;
+  background: transparent;
+  justify-content: center;
+}
+
+.settings-button {
+  box-sizing: border-box;
+  border-width: 0.125rem;
+  border: 0.125rem solid #393e44;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 0.75rem;
+  width: calc(100% - 40px);
+  height: 3rem;
+  background-color: transparent;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
+}
+
+.settings-barshow {
+  width:calc(100% - 40px);
+  display: none;
+  border: 0.125rem solid transparent;
+  right: 20px;
+  left: 20px;
+  height: max-content;
+  background: #181B1F;
+  border-radius: 1rem;
+  top: 88px;
+  position: absolute;
+}
+
+.settings-barshow.ativo {
+  display: block;
+}
+
+.fill-svg {
+  background: transparent;
+  fill: #fcfdfe;
+}
+
+.name-conf {
+  color: #fcfdfe;
+  font-weight: 600;
+  font-size: 0.95rem;
+  width: 100%;
+  flex: 1;
+  background: transparent;
+  text-align: start;
+}
+
+.name-barshow {
+  color: #fcfdfe;
+  font-weight: 600;
+  font-size: .875rem;
+  line-height: 1.5rem;
+  width: 100%;
+  flex: 1;
+  background: transparent;
+  text-align: start;
+}
+
+.selected-view {
+  fill: #4bab71;
+  display: none;
+  background: transparent;
+}
+
+.settings-barshow ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0.5rem;
+}
+
+.settings-barshow ul li {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.70rem;
+  box-sizing: border-box;
+  width: 100%;
+  height: max-content;
+  background: transparent;
+  border-radius: 0.75rem;
+  justify-content: center;
+}
+
+.settings-barshow ul li:hover {
+background: #292D32;
+}
+
+.settings-barshow ul li.selected {
+  background: #fcfdfe;
+  .name-barshow {
+    color: #181B1F;
+  }
+  .fill-svg {
+    fill: #181B1F;
+  }
+  .selected-view {
+    display: block;
+  }
+}
+
+.rotate {
+  transform: rotate(0deg);
+  transition: rotate 0.3s ease;
+}
+
+.rotate.show {
+  transform: rotate(180deg);
+}

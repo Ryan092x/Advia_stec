@@ -1,0 +1,53 @@
+* {
+  background: #181b1f;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-y: hidden;
+}
+
+:root {
+  --borderhover1: #e3e9ee;
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+p,
+blockquote {
+  margin: 0px;
+}
+
+img {
+  max-width: 100%;
+}
+
+input {
+  border: none;
+  padding: initial;
+  margin: initial;
+  font-size: initial;
+  font-family: initial;
+}
+
+button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  background: none;
+  outline: none;
+}
+
+ul, ol, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}

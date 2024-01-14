@@ -1,0 +1,44 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  background: #292D32;
+  border-bottom: 1px solid #393E44;
+}
+
+.menu svg,
+.menu img {
+  background: transparent;
+}
+
+.icon-avatar {
+  position: relative;
+}
+
+.icon-avatar img {
+  border-radius: 9999px;
+}
+
+.icon-chat,
+.icon-logo,
+.icon-more,
+.icon-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background: transparent;
+}
+
+button.icon-avatar {
+  margin-right: 8px;
+}
+
+.botao-menu {
+  margin-left: 8px;
+}
+
+
+

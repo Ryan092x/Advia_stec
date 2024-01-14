@@ -1,0 +1,7 @@
+.settings-show {
+  display: flex;
+  background: transparent;
+  width: 100%;
+  height: max-content;
+  justify-content: center;
+}

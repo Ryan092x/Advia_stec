@@ -1,0 +1,81 @@
+.profile-bar {
+  --opacity: 1;
+  display: none;
+  position: absolute;
+  width: 260px;
+  height: max-content;
+  background: rgb(24 27 31 / var(--opacity));
+  border-radius: 1rem;
+  top: 58px;
+  right: 10px;
+  z-index: 9999;
+}
+
+.profile-bar.ativo {
+  display: block;
+}
+
+.profile-bar ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.profile-bar li:nth-child(1) {
+  margin-top: 20px;
+}
+
+.profile-bar li:last-child {
+  margin-bottom: 20px;
+}
+
+.profile-bar li a {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px;
+  background: transparent;
+  margin-right: 20px;
+  margin-left: 20px;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  transition-property: color, background-color, border-color,
+  text-decoration-color, fill, stroke;
+  transition-timing-function: linear;
+  transition-duration: 0.2s;
+}
+
+.profile-dec {
+  display: flex;
+  background: #292d32;
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition-property: color, background-color, border-color,
+  text-decoration-color, fill, stroke;
+  transition-timing-function: linear;
+  transition-duration: 0.2s;
+}
+
+.profile-background {
+  background-color: transparent;
+  width: 16px;
+  height: 16px;
+  padding: 6px;
+}
+
+.profile-bar li a:hover {
+  background: #292d32;
+}
+
+.profile-bar li a:hover .profile-dec {
+  background-color: #8473fb;
+}
+
+.profile-bar li a p {
+  background: transparent;
+  color: #fcfdfe;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}

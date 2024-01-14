@@ -1,0 +1,15 @@
+@import './global/global.css';
+@import './global/header.css';
+@import './utilidades/togglemenu.css';
+@import './chatbox/chatbox.css';
+@import './chatbox/chatlog.css';
+@import './chatbox/chatinput.css';
+@import './utilidades/chatdrop.css';
+@import './utilidades/profilebar.css';
+
+/* Configurações */
+@import './configurações/settingsbox.css';
+@import './configurações/settingsoptions.css';
+@import './configurações/settingsshow.css';
+
+@import './configurações/show/editarperfilshow.css';
