@@ -8,6 +8,7 @@
 @import './utilidades/profilebar.css';
 @import './chatbox/chatimg.css';
 @import './chatbox/chatfunctions.css';
+@import './chatbox/newchat.css';
 
 /* Configurações */
 @import './configurações/settingsbox.css';

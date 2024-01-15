@@ -8,7 +8,7 @@
   min-height: 64px;
   max-height: 144px;
   border-radius: 12px;
-  background: transparent;
+  background: #292D32;
   border: 1px solid #393e44;
   width: calc(100% - 20px);
 }
