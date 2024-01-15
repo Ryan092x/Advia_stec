@@ -11,6 +11,7 @@
   background: #292D32;
   border: 1px solid #393e44;
   width: calc(100% - 20px);
+  box-shadow: 0 0 10px 16px #292D32;
 }
 
 .chat-input img:nth-child(1) {

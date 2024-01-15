@@ -2,7 +2,6 @@
   height: 100%;
   width: 100%;
   background: transparent;
-  padding-bottom: 2rem;
 }
 
 .new-chat-bkg {
@@ -187,4 +186,8 @@
   margin-left: 1.25rem;
   fill: #7c878e;
   background: transparent;
+}
+
+.creativity-suggestions:last-child {
+  margin-bottom: 94px;
 }
