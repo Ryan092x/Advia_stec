@@ -8,6 +8,10 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;300;400;500;600;700&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -227,11 +231,12 @@
           </div>
         </div>
       </div>
-      <div class="chat-log"></div>
+      <div class="chat-log" id="chat-log"></div>
 
       <div class="chat-input">
         <img src="img/adviagpt.svg" alt="Advia">
-        <textarea id="user-input" placeholder="Olá, escreva aqui..."></textarea>
+        <textarea id="user-input" placeholder="Olá, escreva aqui..." oninput="resizeTextarea()"
+          onblur="resetTextarea()"></textarea>
         <svg class="more-input" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"
           fill="none">
           <path
@@ -239,7 +244,7 @@
             fill="#E3E9EE" />
         </svg>
         <button class="material-symbols-rounded-button">
-          <span class="material-symbols-rounded">
+          <span id="myButton" class="material-symbols-rounded">
             send
           </span>
         </button>
@@ -247,11 +252,20 @@
 
     </div>
   </main>
+  <script type="importmap">
+    {
+        "imports": {
+            "@google/generative-ai": "https://esm.run/@google/generative-ai"
+        }
+    }
+ </script>
   <script src="./js/profilebar.js"></script>
   <script src="./js/togglemenu.js"></script>
   <script src="./js/chatdrop.js"></script>
   <script src="./js/chatfunctions.js"></script>
   <script src="./js/chatcreativity.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+  <script type="module" src="./js/advia.js"></script>
 </body>
 
 </html>

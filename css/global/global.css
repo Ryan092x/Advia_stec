@@ -56,3 +56,36 @@ ul, ol, li {
 a {
   text-decoration: none;
 }
+
+::-webkit-scrollbar {
+  width: 0.125rem;
+  color: #181b1f;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #9494941f;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+/* Estilo para navegadores Firefox */
+::-moz-scrollbar {
+  width: 0.125rem;
+  color: #181b1f;
+}
+
+/* Cor da alça da barra de rolagem */
+::-moz-scrollbar-thumb {
+  background-color: #9494947a;
+}
+
+/* Remover setas */
+::-moz-scrollbar-button {
+  display: none;
+}
+
+.dn {
+  display: none;
+}
