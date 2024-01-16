@@ -113,6 +113,12 @@
   background: #181b1f;
 }
 
+.spacediv {
+  width: 100%;
+  height: 200px;
+  background: transparent;
+}
+
 .mscontent {
   padding-top: 0.25rem;
   font-family: 'Archivo', sans-serif;

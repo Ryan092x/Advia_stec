@@ -3,6 +3,11 @@ const newChat = document.querySelector(".new-chat");
 let headerAdded = false;
 
 function processInput() {
+  const existingSpacediv = document.querySelector(".spacediv");
+  if (existingSpacediv) {
+    existingSpacediv.remove();
+  }
+
   const userInput = document.getElementById("user-input").value;
 
   if (!headerAdded) {
@@ -161,7 +166,8 @@ async function run() {
 
   const gptIcon = document.createElement("div");
   gptIcon.className = "gpt-img";
-  gptIcon.innerHTML = '<div class"gpt-img"><img src="img/adviagpt.svg" alt="Advia" width="32" height="32"></div>';
+  gptIcon.innerHTML =
+    '<div class"gpt-img"><img src="img/adviagpt.svg" alt="Advia" width="32" height="32"></div>';
 
   const responseContent = document.createElement("div");
   responseContent.className = "mscontent digitando";
@@ -180,6 +186,13 @@ async function run() {
 
   // Anexe 'gptMessage' ao elemento pai no DOM
   resultText.appendChild(gptMessage);
+
+  // Crie a spacediv
+  const spacediv = document.createElement("div");
+  spacediv.className = "spacediv";
+
+  // Adicione a spacediv abaixo do gptMessage
+  resultText.appendChild(spacediv);
 
   // Agora, chame a função para animar gradualmente a resposta do modelo
   escrevendoLetra(responseContent);
