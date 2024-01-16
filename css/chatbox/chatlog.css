@@ -20,7 +20,7 @@
   padding-left: 0;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  font-family: 'Archivo', sans-serif;
+  font-family: "Archivo", sans-serif;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -70,7 +70,7 @@
 
 .input-message {
   padding-top: 0.25rem;
-  font-family: 'Archivo', sans-serif;
+  font-family: "Archivo", sans-serif;
   font-weight: 300;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -80,7 +80,8 @@
 /* Mensagem da Advia */
 
 .gpt-message {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
   box-sizing: border-box;
   border-top: 0.0625rem solid #393e44;
   padding: 2rem;
@@ -121,9 +122,57 @@
 
 .mscontent {
   padding-top: 0.25rem;
-  font-family: 'Archivo', sans-serif;
+  font-family: "Archivo", sans-serif;
   font-weight: 300;
   font-size: 1rem;
   line-height: 1.5rem;
   background: transparent;
+}
+
+.buttons-mscontent {
+  grid-column: 2;
+  background: transparent;
+  display: flex;
+  align-items: center;
+}
+
+.buttons-mscontent button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  margin-right: 0.75rem;
+  height: 2.5rem;
+  border-radius: 0.75rem;
+  border: 0.125rem solid #393e44;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  cursor: pointer;
+  background: transparent;
+}
+
+.buttons-mscontent button:nth-child(4) {
+  margin-right: auto;
+}
+
+.buttons-mscontent button:nth-child(5) {
+  margin-right: 0px;
+}
+
+.buttons-mscontent button svg {
+  background: transparent;
+  fill: #7c878e;
+  width: 20px;
+  height: 20px;
+}
+.buttons-mscontent button:hover {
+  border: 0.125rem solid #fcfdfe;
+}
+
+.buttons-mscontent button:hover svg {
+  fill:#fcfdfe;
+}
+
+.buttons-mscontent.like.click {
+  
 }
