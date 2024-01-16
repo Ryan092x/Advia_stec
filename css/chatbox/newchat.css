@@ -188,6 +188,8 @@
   background: transparent;
 }
 
-.creativity-suggestions:last-child {
-  margin-bottom: 8rem;
+.space {
+  width: 100%;
+  height: 200px;
+  background: transparent;
 }
