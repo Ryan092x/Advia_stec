@@ -1,6 +1,7 @@
 .settings-box {
   min-height: 92.6vh;
-  max-height: 100vh;
+  max-height: 92.6vh;
   background: #292D32;
   position: relative;
+  overflow: auto;
 }

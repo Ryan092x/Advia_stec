@@ -16,3 +16,6 @@
 @import './configurações/settingsshow.css';
 
 @import './configurações/show/editarperfilshow.css';
+@import './configurações/show/alterarsenhashow.css';
+@import './configurações/show/notificacoesshow.css';
+@import './configurações/show/deletarcontashow.css';

@@ -6,7 +6,7 @@
   height: max-content;
 }
 
-.editar-perfil {
+.options-container {
   display: flex;
   width: 100%;
   height: max-content;
@@ -40,8 +40,9 @@
   height: max-content;
   background: #181B1F;
   border-radius: 1rem;
-  top: 88px;
+  top: 228px;
   position: absolute;
+  z-index: 6;
 }
 
 .settings-barshow.ativo {
@@ -125,4 +126,12 @@ background: #292D32;
 
 .rotate.show {
   transform: rotate(180deg);
+}
+
+.options-container.dn {
+  display: none;
+}
+
+.dn.db {
+  display: flex;
 }

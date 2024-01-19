@@ -1,0 +1,131 @@
+.alterar-senha-show {
+  width: calc(100% - 46px);
+  background: transparent;
+}
+
+.alterar-senha-show h2 {
+  margin-bottom: 2.5rem;
+  margin-right: auto;
+  font-family: sans-serif;
+  letter-spacing: -.01em;
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  background: transparent;
+  color: #fcfdfe;
+  word-wrap: break-word;
+}
+
+.alterar-senha-show h3 {
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  color: #7c878e;
+  font-family: sans-serif;
+  letter-spacing: -0.01em;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  background: transparent;
+}
+
+.passwordIcon1 {
+  background: transparent;
+  fill: #393e44;
+}
+
+.passwordIcon2 {
+  background: transparent;
+  fill: #393e44;
+}
+
+.min-senha {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  color: #7c878e;
+  letter-spacing: -0.01em;
+  word-wrap: break-word;
+  background: transparent;
+  margin-bottom: 2rem;
+}
+
+.settings-input-container.password {
+  margin-bottom: 0;
+}
+
+/* Botoes de Envio */
+
+.botoes-envio {
+  background: transparent;
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.but-send {
+  flex-grow: 1;
+  cursor: pointer;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.01em;
+  display: inline-flex;
+  height: 3rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.5rem;
+  border-width: 0.125rem;
+  border: 0.125rem solid transparent;
+  background: linear-gradient(to bottom, #9a77ff, #735ffa);
+  font-weight: 600;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: linear;
+  transition-duration: 0.2s;
+  gap: 8px;
+}
+
+.but-send:hover {
+  border: 0.125rem solid #3926b6b9;
+}
+
+.but-send span,
+.but-send svg {
+  background: transparent;
+  color: #fcfdfe;
+  fill: #fcfdfe;
+}
+
+.cancel-send {
+  margin-left: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.01em;
+  display: inline-flex;
+  height: 3rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.5rem;
+  border-width: 0.125rem;
+  background: transparent;
+  border: 0.125rem solid #393e44;
+  padding-left: 1.375rem;
+  padding-right: 1.375rem;
+  font-weight: 600;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: linear;
+  transition-duration: 0.2s;
+  color: #fcfdfe;
+  cursor: pointer;
+}
+
+.cancel-send:hover {
+  border: 0.125rem solid #fcfdfe;
+}
+
+.cont-sel.dn {
+  display: none;
+}
+
+.cont-sel.dn.db {
+  display: block;
+}
