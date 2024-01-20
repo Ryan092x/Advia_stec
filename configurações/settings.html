@@ -307,6 +307,95 @@
             </span>
             <input class="settings-input" type="text" placeholder="Sua localização" required value="Manaus, Amazonas">
           </div>
+
+          <div class="dados-pessoais">
+            <h2>Dados Pessoais <span id="dados-pessoais-click"><svg class="dp-svg" xmlns="http://www.w3.org/2000/svg" width="23"
+                  height="23" viewBox="0 0 23 23" fill="none">
+                  <path
+                    d="M10 4H3C2.46957 4 1.96086 4.21071 1.58579 4.58579C1.21071 4.96086 1 5.46957 1 6V20C1 20.5304 1.21071 21.0391 1.58579 21.4142C1.96086 21.7893 2.46957 22 3 22H17C17.5304 22 18.0391 21.7893 18.4142 21.4142C18.7893 21.0391 19 20.5304 19 20V13M17.5 2.50001C17.8978 2.10219 18.4374 1.87869 19 1.87869C19.5626 1.87869 20.1022 2.10219 20.5 2.50001C20.8978 2.89784 21.1213 3.4374 21.1213 4.00001C21.1213 4.56262 20.8978 5.10219 20.5 5.50001L11 15L7 16L8 12L17.5 2.50001Z"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg></span></h2>
+
+            <h3>Nome Completo</h3>
+            <div class="settings-input-container">
+              <input class="settings-input extra dp" type="text" placeholder="Nome completo" required
+                value="Ryan Victor da Silva Cutrim">
+            </div>
+
+            <h3>CPF</h3>
+            <div class="settings-input-container">
+              <input class="settings-input extra dp" type="text" placeholder="000.000.000-00" required
+                value="888.888.888-88">
+            </div>
+
+            <h3>RG</h3>
+            <div class="settings-input-container">
+              <input class="settings-input extra dp" type="text" placeholder="0000000-0" required value="8888888-8">
+            </div>
+
+            <h3>Estado civil</h3>
+            <div class="settings-input-container">
+              <input class="settings-input extra dp" type="text" placeholder="Solteiro, casado, viúvo..." required
+                value="Solteiro">
+            </div>
+
+            <h3>Endereço <span>Opcional</span></h3>
+            <div class="settings-input-container">
+              <input class="settings-input extra dp" type="text" placeholder="Seu endereço" required
+                value="Rua ali do lado n36, Floresta Amazônica">
+            </div>
+
+            <h3>Número de telefone</h3>
+            <div class="settings-input-container">
+              <input class="settings-input extra dp" type="text" placeholder="(92) 99999-9999" required
+                value="(92) 99090-9090">
+            </div>
+            <h3>Endereço de e-mail</h3>
+            <div class="settings-input-container">
+              <input class="settings-input extra dp" type="text" placeholder="(92) 99999-9999" required
+                value="ficticio@email.com.br">
+            </div>
+          </div>
+
+          <div class="dados-juridicos">
+            <h2>Dados Jurídicos<span id="dados-juridicos-click"><svg class="dj-svg" xmlns="http://www.w3.org/2000/svg" width="23"
+                  height="23" viewBox="0 0 23 23" fill="none">
+                  <path
+                    d="M10 4H3C2.46957 4 1.96086 4.21071 1.58579 4.58579C1.21071 4.96086 1 5.46957 1 6V20C1 20.5304 1.21071 21.0391 1.58579 21.4142C1.96086 21.7893 2.46957 22 3 22H17C17.5304 22 18.0391 21.7893 18.4142 21.4142C18.7893 21.0391 19 20.5304 19 20V13M17.5 2.50001C17.8978 2.10219 18.4374 1.87869 19 1.87869C19.5626 1.87869 20.1022 2.10219 20.5 2.50001C20.8978 2.89784 21.1213 3.4374 21.1213 4.00001C21.1213 4.56262 20.8978 5.10219 20.5 5.50001L11 15L7 16L8 12L17.5 2.50001Z"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg></span></h2>
+
+                <h3>Nome da empresa</h3>
+                <div class="settings-input-container">
+                  <input class="settings-input extra dj" type="text" placeholder="Nome da empresa" value="">
+                </div>
+
+                <h3>CNPJ</h3>
+                <div class="settings-input-container">
+                  <input class="settings-input extra dj" type="text" placeholder="Ex: 12.345.678/0001-90"
+                  value="">
+                </div>
+
+                <h3>Endereço comercial</h3>
+                <div class="settings-input-container">
+                  <input class="settings-input extra dj" type="text" placeholder="Endereço comercial"
+                  value="">
+                </div>
+
+                <h3>Número de telefone da empresa</h3>
+                <div class="settings-input-container">
+                  <input class="settings-input extra dj" type="text" placeholder="Contato da empresa"
+                  value="">
+                </div>
+
+                <h3>Setor de atuação</h3>
+                <div class="settings-input-container">
+                  <input class="settings-input extra dj" type="text" placeholder="Ex: Direito trabalhista"
+                  value="">
+                </div>
+
+          </div>
+
           <div class="botoes-envio">
             <button class="but-send" type="submit">
               <span>Salvar alterações</span>
@@ -419,7 +508,9 @@
 
         <form class="deletar-conta-show cont-sel dn" id="deletar-conta-cont" action>
           <h2>Lamentamos ver você partir</h2>
-          <div class="del-cont-aviso">Aviso: a exclusão da sua conta removerá permanentemente todos os seus dados e não poderá ser desfeita. Isso inclui seu perfil, conversas, comentários e qualquer outra informação associada à sua conta. Tem certeza de que deseja prosseguir com a exclusão de sua conta?</div>
+          <div class="del-cont-aviso">Aviso: a exclusão da sua conta removerá permanentemente todos os seus dados e não
+            poderá ser desfeita. Isso inclui seu perfil, conversas, comentários e qualquer outra informação associada à
+            sua conta. Tem certeza de que deseja prosseguir com a exclusão de sua conta?</div>
           <h3>Sua senha</h3>
 
           <div class="settings-input-container">
@@ -437,7 +528,9 @@
             <button class="but-send" type="submit">
               <span>Deletar minha conta</span>
               <svg width="20" height="20" viewBox="0 0 20 20">
-                <path d="M10.897.66l.427.004.35.01c.58.025.845.094 1.203.277.502.256.91.664 1.165 1.165a2.27 2.27 0 0 1 .262.965l.016.278.009.334.001.3H17.5a1 1 0 0 1 .117 1.993l-.117.007h-.667l-.001 8.854-.01.676-.014.368-.022.313c-.048.531-.145.839-.335 1.211a3.5 3.5 0 0 1-1.53 1.53l-.18.086-.088.038-.179.066-.092.028-.195.048-.215.038-.243.029-.278.021-.321.014-.372.009-.927.005-4.187-.001-.469-.005-.399-.011-.339-.018c-.625-.044-.955-.14-1.362-.347a3.5 3.5 0 0 1-1.53-1.53l-.086-.18-.072-.177-.06-.182c-.036-.125-.064-.258-.086-.409l-.029-.243-.021-.278-.014-.321-.011-.579-.003-.72-.001-8.333H2.5A1 1 0 0 1 2.383 4l.117-.007h3.167l.004-.324.01-.35c.025-.58.094-.845.277-1.203.256-.502.664-.91 1.165-1.165L7.3.867c.202-.087.395-.138.667-.167l.254-.02.304-.012.367-.006L10.897.66zm3.936 5.333H5.166l.002 8.775.01.702.017.375.016.192.01.082.024.139.014.059.032.103c.012.031.025.06.039.088a1.5 1.5 0 0 0 .656.655l.083.037.096.031.115.026.141.021.173.017.212.013.565.015.797.004 4.308-.002.502-.009.263-.01.214-.014.173-.019.073-.011.125-.027a1.01 1.01 0 0 0 .103-.032l.088-.039a1.5 1.5 0 0 0 .656-.656l.019-.04.034-.088.029-.105.023-.127.019-.156.015-.192.011-.233.01-.443.004-.797V5.993zm-6.5 2.583a1 1 0 0 1 .993.883l.007.117v4.167a1 1 0 0 1-1.993.117l-.007-.117V9.576a1 1 0 0 1 1-1zm3.333 0a1 1 0 0 1 .993.883l.007.117v4.167a1 1 0 0 1-1.993.117l-.007-.117V9.576a1 1 0 0 1 1-1zm-1-5.917l-1.83.002-.247.004-.191.007-.143.01-.103.013-.072.016-.05.02c-.125.064-.227.166-.291.291l-.02.05-.016.072-.013.103-.014.231-.009.497-.001.015h4.665v-.015l-.009-.497-.014-.231-.013-.103-.016-.072-.02-.05c-.064-.125-.166-.227-.291-.291l-.05-.02-.072-.016-.103-.013-.143-.01-.438-.012-.496-.002z"></path>
+                <path
+                  d="M10.897.66l.427.004.35.01c.58.025.845.094 1.203.277.502.256.91.664 1.165 1.165a2.27 2.27 0 0 1 .262.965l.016.278.009.334.001.3H17.5a1 1 0 0 1 .117 1.993l-.117.007h-.667l-.001 8.854-.01.676-.014.368-.022.313c-.048.531-.145.839-.335 1.211a3.5 3.5 0 0 1-1.53 1.53l-.18.086-.088.038-.179.066-.092.028-.195.048-.215.038-.243.029-.278.021-.321.014-.372.009-.927.005-4.187-.001-.469-.005-.399-.011-.339-.018c-.625-.044-.955-.14-1.362-.347a3.5 3.5 0 0 1-1.53-1.53l-.086-.18-.072-.177-.06-.182c-.036-.125-.064-.258-.086-.409l-.029-.243-.021-.278-.014-.321-.011-.579-.003-.72-.001-8.333H2.5A1 1 0 0 1 2.383 4l.117-.007h3.167l.004-.324.01-.35c.025-.58.094-.845.277-1.203.256-.502.664-.91 1.165-1.165L7.3.867c.202-.087.395-.138.667-.167l.254-.02.304-.012.367-.006L10.897.66zm3.936 5.333H5.166l.002 8.775.01.702.017.375.016.192.01.082.024.139.014.059.032.103c.012.031.025.06.039.088a1.5 1.5 0 0 0 .656.655l.083.037.096.031.115.026.141.021.173.017.212.013.565.015.797.004 4.308-.002.502-.009.263-.01.214-.014.173-.019.073-.011.125-.027a1.01 1.01 0 0 0 .103-.032l.088-.039a1.5 1.5 0 0 0 .656-.656l.019-.04.034-.088.029-.105.023-.127.019-.156.015-.192.011-.233.01-.443.004-.797V5.993zm-6.5 2.583a1 1 0 0 1 .993.883l.007.117v4.167a1 1 0 0 1-1.993.117l-.007-.117V9.576a1 1 0 0 1 1-1zm3.333 0a1 1 0 0 1 .993.883l.007.117v4.167a1 1 0 0 1-1.993.117l-.007-.117V9.576a1 1 0 0 1 1-1zm-1-5.917l-1.83.002-.247.004-.191.007-.143.01-.103.013-.072.016-.05.02c-.125.064-.227.166-.291.291l-.02.05-.016.072-.013.103-.014.231-.009.497-.001.015h4.665v-.015l-.009-.497-.014-.231-.013-.103-.016-.072-.02-.05c-.064-.125-.166-.227-.291-.291l-.05-.02-.072-.016-.103-.013-.143-.01-.438-.012-.496-.002z">
+                </path>
               </svg>
             </button>
             <button class="cancel-send" type="button">Cancel</button>

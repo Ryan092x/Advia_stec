@@ -76,3 +76,107 @@
   cursor: pointer;
   transform: rotate(180deg);
 }
+
+.functions-chat {
+  padding: 1rem;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  flex-direction: column;
+  flex-grow: 1;
+  display: flex;
+  padding: 16px;
+  background: transparent;
+}
+
+.registros-arquivos {
+  box-sizing: border-box;
+  border-color: #393e44;
+  border-width: 0.0625rem;
+  border-radius: 0.75rem;
+  padding: 0.1875rem;
+  overflow: hidden;
+  background-color: #181b1f;
+  border: 0.125rem solid #393e44;
+}
+
+.registros-arquivos-div {
+  display: flex;
+  background: transparent;
+}
+
+.registros-arquivos-div button {
+  color: #fcfdfe;
+  font-weight: 600;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 0.5rem;
+  height: 2rem;
+  flex: 1 1 0%;
+  background: transparent;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: linear;
+  transition-duration: 0.2s;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.registros-arquivos-div button.ativo {
+  background: #292d32;
+}
+
+/* Registros Container */
+
+.registros-container {
+  margin-right: auto;
+  margin-left: auto;
+  width: calc(100% - 32px);
+  background: transparent;
+}
+
+.registros-criados {
+  min-height: 300px;
+  max-height: 300px;
+  border-radius: 1rem;
+  background: #181b1f;
+}
+
+.criar-registro {
+  display: flex;
+  align-items: center;
+  color: #fcfdfe;
+  background-color: #181b1f;
+  width: 100%;
+  margin-top: 1rem;
+  font-family: var(--font-inter);
+  font-size: .875rem;
+  line-height: 1.5rem;
+  letter-spacing: -.01em;
+  height: 3rem;
+  justify-content: center;
+  border-radius: 1.5rem;
+  border-width: 0.125rem;
+  border-color: transparent;
+  font-weight: 600;
+  transition-property: color,background-color,border-color,text-decoration-color,fill,stroke;
+  transition-timing-function: linear;
+  transition-duration: .2s;
+  cursor: pointer;
+}
+
+.criar-registro span {
+  font-size: 1.25rem;
+}
+
+.conteudo-functions {
+  background: transparent;
+  display: none;
+}
+
+.conteudo-functions.ativo {
+  display: block;
+}

@@ -47,3 +47,32 @@ document.getElementById('masterCheckbox').addEventListener('change', function() 
     checkbox.checked = masterCheckbox;
   });
 });
+
+// Formulário Ativo e inativo
+
+const dadosPessoaisClick = document.querySelector('#dados-pessoais-click');
+const dadosPessoaisInp = document.querySelectorAll('.dp');
+const svgPessoais = document.querySelector('.dp-svg');
+
+dadosPessoaisClick.addEventListener('click', () => {
+  dadosPessoaisInp.forEach(element => {
+    element.classList.toggle('edit');
+  });
+  svgPessoais.classList.toggle('on');
+});
+
+const dadosJuridicosClick = document.querySelector('#dados-juridicos-click');
+const dadosJuridicosInp = document.querySelectorAll('.dj');
+const svgJuridico = document.querySelector('.dj-svg');
+
+dadosJuridicosClick.addEventListener('click', () => {
+  dadosJuridicosInp.forEach(element => {
+    element.classList.toggle('edit');
+    if (element.classList.contains('edit')) {
+      element.setAttribute('required', 'required');
+    } else {
+      element.removeAttribute('required');
+    }
+  });
+  svgJuridico.classList.toggle('on');
+});
