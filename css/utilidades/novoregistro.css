@@ -1,0 +1,174 @@
+.novo-registro {
+  max-width: 40rem;
+  width: 100%;
+  z-index: 10;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  min-height: 600px;
+  max-height: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  overflow: auto;
+  box-sizing: border-box;
+  background: #292d32;
+  display: none;
+}
+
+.novo-registro.ativo {
+  display: block;
+}
+
+.novo-registro .div-reg {
+  background: transparent;
+}
+
+@media (max-width: 40rem) {
+  .novo-registro {
+    margin: 0 1rem;
+    max-width: none; /* Removendo a largura máxima para permitir que o contêiner diminua */
+    width: calc(100% - 2rem); /* 2rem para a margem direita e esquerda */
+    left: 0; /* Alinhando à esquerda quando a tela for menor */
+    transform: translate(
+      0,
+      -50%
+    ); /* Ajustando a transformação para manter a centralização vertical */
+  }
+}
+
+.new-reg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  background: transparent;
+}
+
+.new-reg h2 {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+  color: #fcfdfe;
+  background: transparent;
+}
+
+.new-reg-close {
+  background: transparent;
+  width: 32px;
+  height: 32px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.new-reg-close svg {
+  background: transparent;
+  fill: #fcfdfe;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: linear;
+  transition-duration: 0.2s;
+}
+
+.new-reg-close:hover svg {
+  fill: #ff6c3e;
+}
+
+.ps-pj {
+  box-sizing: border-box;
+  border-color: #393e44;
+  border-width: 0.0625rem;
+  border-radius: 0.75rem;
+  padding: 0.1875rem;
+  overflow: hidden;
+  background-color: #181b1f;
+  border: 0.125rem solid #393e44;
+  margin-bottom: 2rem;
+  background: #181b1f;
+}
+
+.ps-pj-div {
+  display: flex;
+  background: #181b1f;
+}
+
+.ps-pj-div button {
+  color: #fcfdfe;
+  font-weight: 600;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 0.5rem;
+  height: 2rem;
+  flex: 1 1 0%;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition-property: color, background-color, border-color,
+  text-decoration-color, fill, stroke;
+  transition-timing-function: linear;
+  transition-duration: 0.2s;
+  outline: 2px solid transparent;
+  background: transparent;
+  outline-offset: 2px;
+}
+
+.ps-pj-div button.ativo {
+  background: #292d32;
+}
+
+.form-ps,
+.form-pj {
+  background: transparent;
+  display: none;
+}
+
+.form-ps h3,
+.form-pj h3 {
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  color: #7c878e;
+  font-family: sans-serif;
+  letter-spacing: -0.01em;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  background: transparent;
+}
+
+.form-ps input,
+.form-pj input {
+  color: #fcfdfe;
+}
+
+.form-ps .botoes-envio,
+.form-pj .botoes-envio {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.form-ps.ativo,
+.form-pj.ativo {
+  display: initial;
+}
+
+.overlaynr {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.39);
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 9;
+}
+
+.overlaynr.ativo {
+  display: block;
+  opacity: 1;
+}

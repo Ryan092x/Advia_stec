@@ -60,6 +60,112 @@
     </ul>
   </div>
 
+  <div class="overlaynr">
+
+  </div>
+
+  <div class="novo-registro">
+    <div class="div-reg">
+      <div class="new-reg">
+        <h2>Novo Registro</h2>
+        <button type="button" class="new-reg-close">
+          <svg class="" width="20" height="20" viewBox="0 0 20 20">
+            <path
+              d="M5.613 4.21l.094.083L10 8.585l4.293-4.292a1 1 0 0 1 1.497 1.32l-.083.094L11.415 10l4.292 4.293a1 1 0 0 1-1.32 1.497l-.094-.083L10 11.415l-4.293 4.292a1 1 0 0 1-1.497-1.32l.083-.094L8.585 10 4.293 5.707a1 1 0 0 1 1.32-1.497z">
+            </path>
+          </svg>
+        </button>
+      </div>
+      <div class="ps-pj">
+        <div class="ps-pj-div">
+          <button type="button" class="ps ativo" data-target="pessoaFisica">Pessoa física</button>
+          <button type="button" class="pj" data-target="pessoaJuridica">Pessoa Jurídica</button>
+        </div>
+      </div>
+    </div>
+    <form class="form-ps ativo" action="">
+      <h3>Nome completo</h3>
+      <div class="settings-input-container">
+        <input class="settings-input extra dj" type="text" placeholder="Digite o nome completo">
+      </div>
+
+      <h3>CPF</h3>
+      <div class="settings-input-container">
+        <input class="settings-input extra dj" type="text" placeholder="Digite o CPF do cliente">
+      </div>
+
+      <h3>RG</h3>
+      <div class="settings-input-container">
+        <input class="settings-input extra dj" type="text" placeholder="Digite o RG do cliente">
+      </div>
+
+      <h3>Número de telefone</h3>
+      <div class="settings-input-container">
+        <input class="settings-input extra dj" type="text" placeholder="Número de telefone do cliente">
+      </div>
+
+      <h3>Email</h3>
+      <div class="settings-input-container">
+        <input class="settings-input extra dj" type="text" placeholder="Endereço de e-mail do cliente">
+      </div>
+
+      <h3>Endereço residencial</h3>
+      <div class="settings-input-container">
+        <input class="settings-input extra dj" type="text" placeholder="Digite o endereço do cliente">
+      </div>
+
+      <div class="botoes-envio">
+        <button class="but-send" type="submit">
+          <span>Salvar Informações</span>
+          <svg class="" width="20" height="20" viewBox="0 0 20 20">
+            <path
+              d="M16.077 4.827c.325-.325.853-.325 1.179 0 .3.3.324.773.069 1.1l-.069.079-9.167 9.167c-.3.3-.773.324-1.1.069l-.079-.069-4.167-4.167c-.325-.325-.325-.853 0-1.179.3-.3.773-.324 1.1-.069l.079.069L7.5 13.404l8.577-8.577z">
+            </path>
+          </svg>
+        </button>
+        <button class="cancel-send" type="button">Cancel</button>
+      </div>
+    </form>
+    <form action="" class="form-pj">
+      <h3>Nome da empresa</h3>
+      <div class="settings-input-container">
+        <input class="settings-input extra dj" type="text" placeholder="Digite o nome da empresa">
+      </div>
+
+      <h3>CNPJ</h3>
+      <div class="settings-input-container">
+        <input class="settings-input extra dj" type="text" placeholder="Digite o CNPJ da empresa">
+      </div>
+
+      <h3>Endereço comercial</h3>
+      <div class="settings-input-container">
+        <input class="settings-input extra dj" type="text" placeholder="Digite o endereço comercial da empresa">
+      </div>
+
+      <h3>Número de telefone da empresa</h3>
+      <div class="settings-input-container">
+        <input class="settings-input extra dj" type="text" placeholder="Digite o número de telefone da empresa">
+      </div>
+
+      <h3>Setor de atuação</h3>
+      <div class="settings-input-container">
+        <input class="settings-input extra dj" type="text" placeholder="Digite o setor de atuação da empresa">
+      </div>
+
+      <div class="botoes-envio">
+        <button class="but-send" type="submit">
+          <span>Salvar Informações</span>
+          <svg class="" width="20" height="20" viewBox="0 0 20 20">
+            <path
+              d="M16.077 4.827c.325-.325.853-.325 1.179 0 .3.3.324.773.069 1.1l-.069.079-9.167 9.167c-.3.3-.773.324-1.1.069l-.079-.069-4.167-4.167c-.325-.325-.325-.853 0-1.179.3-.3.773-.324 1.1-.069l.079.069L7.5 13.404l8.577-8.577z">
+            </path>
+          </svg>
+        </button>
+        <button class="cancel-send" type="button">Cancel</button>
+      </div>
+    </form>
+  </div>
+
   <header>
     <div class="menu">
       <div class="botao-menu"><button class="icon-menu"></button></div>
@@ -156,7 +262,21 @@
             </div>
           </div>
           <div class="registros-container">
-            <div class="registros-criados"></div>
+            <div class="registros-criados">
+              <button>
+                <div class="block-registros">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 16 19" fill="none">
+                    <path
+                      d="M13.6291 9.58546C13.5613 9.51812 13.4809 9.46481 13.3924 9.42855C13.304 9.39229 13.2093 9.37381 13.1138 9.37414C13.0182 9.37448 12.9237 9.39364 12.8355 9.43052C12.7473 9.4674 12.6673 9.52128 12.6 9.58909C12.5327 9.6569 12.4793 9.73731 12.4431 9.82572C12.4068 9.91414 12.3883 10.0088 12.3887 10.1044C12.389 10.1999 12.4082 10.2945 12.4451 10.3827C12.4819 10.4708 12.5358 10.5508 12.6036 10.6182C13.219 11.2271 13.7075 11.952 14.0408 12.7509C14.3741 13.5499 14.5457 14.407 14.5454 15.2727C14.5454 16.16 11.9927 17.4545 8.00001 17.4545C4.0073 17.4545 1.45458 16.16 1.45458 15.2727C1.45343 14.4127 1.62176 13.5609 1.94996 12.766C2.27815 11.9711 2.75977 11.2487 3.3673 10.64C3.50276 10.5037 3.57879 10.3194 3.57879 10.1273C3.57879 9.93514 3.50276 9.75081 3.3673 9.61455C3.23104 9.47909 3.04671 9.40306 2.85458 9.40306C2.66244 9.40306 2.47812 9.47909 2.34185 9.61455C1.59648 10.3558 1.00566 11.2376 0.603672 12.2088C0.201679 13.1801 -0.00349607 14.2215 4.50673e-05 15.2727C4.50673e-05 17.6363 4.12366 18.9091 8.00001 18.9091C11.8764 18.9091 16 17.6363 16 15.2727C16.0028 14.2147 15.7945 13.1668 15.3874 12.1903C14.9803 11.2137 14.3825 10.3282 13.6291 9.58546Z"
+                      fill="#FCFDFE" />
+                    <path
+                      d="M8.00001 10.1818C9.00689 10.1818 9.99116 9.8832 10.8284 9.32381C11.6655 8.76441 12.3181 7.96933 12.7034 7.03909C13.0887 6.10885 13.1895 5.08524 12.9931 4.09771C12.7966 3.11017 12.3118 2.20306 11.5998 1.49109C10.8878 0.779115 9.98073 0.294255 8.99319 0.0978223C8.00566 -0.0986108 6.98205 0.00220579 6.05181 0.387523C5.12157 0.77284 4.32648 1.42535 3.76709 2.26254C3.2077 3.09974 2.90912 4.08401 2.90912 5.09089C2.90912 6.44108 3.44548 7.73596 4.40021 8.69069C5.35493 9.64542 6.64982 10.1818 8.00001 10.1818ZM8.00001 1.45454C8.71921 1.45454 9.42226 1.66781 10.0203 2.06738C10.6182 2.46694 11.0843 3.03486 11.3596 3.69932C11.6348 4.36378 11.7068 5.09492 11.5665 5.80031C11.4262 6.50569 11.0798 7.15362 10.5713 7.66218C10.0627 8.17073 9.41481 8.51706 8.70942 8.65737C8.00404 8.79768 7.27289 8.72567 6.60844 8.45044C5.94398 8.17521 5.37606 7.70913 4.9765 7.11114C4.57693 6.51314 4.36366 5.81009 4.36366 5.09089C4.36366 4.12647 4.74678 3.20155 5.42872 2.5196C6.11067 1.83766 7.03559 1.45454 8.00001 1.45454Z"
+                      fill="#FCFDFE" />
+                  </svg>
+                </div>
+                Ana Catarina de Ramelo
+              </button>
+            </div>
             <button class="criar-registro">Criar novo registro +</button>
           </div>
         </div>
