@@ -20,9 +20,11 @@ backChatFunctions.addEventListener('click', toggleChatFunctions);
 overlay2.addEventListener('click', toggleChatFunctions);
 
 document.addEventListener('click', (event) => {
-  const isClickInside = showChatFunctions.contains(event.target) || chatFunctions.contains(event.target);
+  const isClickInsideChatFunctions = chatFunctions.contains(event.target);
+  const isClickInsideNovoRegistro = novoRegistro.contains(event.target);
+  const isClickInsideOverlayNR = overlayNR.contains(event.target);
 
-  if (!isClickInside) {
+  if (!isClickInsideChatFunctions && !isClickInsideNovoRegistro && !isClickInsideOverlayNR) {
     chatFunctions.classList.remove('ativo');
     overlay2.classList.remove('ativo');
   }

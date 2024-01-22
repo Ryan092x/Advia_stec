@@ -121,8 +121,16 @@
   outline-offset: 2px;
 }
 
+.creativity-div button:hover {
+  color: #BE87FF;
+}
+
 .creativity-div button.ativo {
   background: #292d32;
+}
+
+.creativity-div button:hover.ativo {
+  color: #fcfdfe;
 }
 
 /* CreativitySugestions */

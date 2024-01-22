@@ -154,19 +154,24 @@
   width: 100%;
   margin-top: 1rem;
   font-family: var(--font-inter);
-  font-size: .875rem;
+  font-size: 0.875rem;
   line-height: 1.5rem;
-  letter-spacing: -.01em;
+  letter-spacing: -0.01em;
   height: 3rem;
   justify-content: center;
   border-radius: 1.5rem;
   border-width: 0.125rem;
   border-color: transparent;
   font-weight: 600;
-  transition-property: color,background-color,border-color,text-decoration-color,fill,stroke;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
   transition-timing-function: linear;
-  transition-duration: .2s;
+  transition-duration: 0.2s;
   cursor: pointer;
+}
+
+.criar-registro:hover {
+  font-size: 0.92rem;
 }
 
 .criar-registro span {
@@ -185,30 +190,46 @@
 .registros-criados button {
   display: flex;
   align-items: center;
-  font-family: 'Archivo', sans-serif;
+  font-family: "Archivo", sans-serif;
   width: 100%;
   font-weight: 600;
   padding: 0.5rem;
   margin-bottom: 0.25rem;
-  font-size: .875rem;
+  font-size: 0.875rem;
   line-height: 1.5rem;
-  letter-spacing: -.01em;
+  letter-spacing: -0.01em;
   cursor: pointer;
   text-transform: none;
   color: #fcfdfe;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: linear;
+  transition-duration: 0.2s;
+  border-radius: 0.75rem;
 }
 
+.registros-criados button:hover {
+  background: #292d32;
+}
 
 .block-registros {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #0a0b0c;
+  background: #292d32;
   width: 2rem;
   height: 2rem;
   margin-right: 1rem;
   border-radius: 0.5rem;
+  transition-property: color, background-color, border-color,
+  text-decoration-color, fill, stroke;
+  transition-timing-function: linear;
+  transition-duration: 0.2s;
 }
 
-
-
+.registros-criados button:hover .block-registros {
+  background: #735ffa;
+}
+.block-registros svg {
+  background: transparent;
+}

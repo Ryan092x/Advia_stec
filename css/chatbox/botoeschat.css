@@ -1,0 +1,173 @@
+.like.click {
+  background: #735ffa;
+  border: 0.125rem solid #735ffa;
+}
+
+.like.click:hover {
+  border: 0.125rem solid #735ffa;
+}
+
+.like.click svg {
+  fill: #fcfdfe;
+}
+
+.deslike.click {
+  background: #735ffa;
+  border: 0.125rem solid #735ffa;
+}
+
+.deslike.click:hover {
+  border: 0.125rem solid #735ffa;
+}
+
+.deslike.click svg {
+  fill: #fcfdfe;
+}
+
+/* Header do chat */
+
+.chat-header {
+  gap: 12px;
+  position: relative;
+}
+
+.chat-name {
+  flex: 1;
+}
+
+.chat-name:hover {
+  color: #735ffa;
+}
+
+.options-chat-header {
+  background: transparent;
+}
+
+.options-chat-header-button {
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: linear;
+  transition-duration: 0.2s;
+  font-size: 0;
+  line-height: 0px;
+  border-radius: 0.5rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  cursor: pointer;
+  text-transform: none;
+}
+
+.options-chat-header-button.click {
+  background: #181b1f;
+}
+
+.options-chat-header-button:hover {
+  background: #181b1f;
+}
+
+.options-chat-header-button svg {
+  fill: #fcfdfe;
+  background: transparent;
+}
+
+.options-chat-header-show {
+  display: none;
+  background: #181b1f;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  right: 9rem;
+  min-width: 12.5rem;
+  z-index: 2;
+  position: absolute;
+}
+
+.options-chat-header-show.ativo {
+  display: block;
+}
+
+.div-button-option-chat-header {
+  margin-bottom: 0.25rem;
+}
+
+.div-button-option-chat-header button {
+  background: transparent;
+  transition-property: color,background-color,border-color,text-decoration-color,fill,stroke;
+  transition-timing-function: linear;
+  transition-duration: .2s;
+  font-weight: 600;
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+  font-size: .875rem;
+  line-height: 1.5rem;
+  font-family: 'Archivo', sans-serif;
+  letter-spacing: -.01em;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  color: #fcfdfe;
+  cursor: pointer;
+}
+
+.div-button-option-chat-header button.ultimo {
+  color: #FF6C3E;
+}
+
+.div-button-option-chat-header:hover button {
+  background: #292d32;
+}
+
+.div-button-option-chat-header button div {
+  background: #292d32;
+  transition-property: color,background-color,border-color,text-decoration-color,fill,stroke;
+  transition-timing-function: linear;
+  transition-duration: .2s;
+  border-radius: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  margin-right: 1rem;
+}
+
+.div-button-option-chat-header:hover button div {
+  background: #735ffa;
+}
+
+.div-button-option-chat-header button div svg{
+  background: transparent;
+  fill: #fcfdfe;
+}
+
+
+.share-chat-header {
+  height: 2.25rem;
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
+  letter-spacing: -0.01em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.5rem;
+  border-width: 0.125rem;
+  border-color: transparent;
+  font-weight: 600;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: linear;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  text-transform: none;
+  background: #fcfdfe;
+}
+
+.share-chat-header span {
+  background: transparent;
+  color: #292d32;
+}
+
+.share-chat-header:hover span {
+  color: #735ffa;
+}
