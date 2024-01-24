@@ -12,7 +12,8 @@
 
 @media (max-width: 770px) {
   .div-chat-input {
-    padding-bottom: 3rem;
+    position: fixed;
+    bottom: 10px;
     border-radius: 12px 12px 0px 0px;
   }
   .main {
