@@ -2,7 +2,7 @@
   position: absolute;
   bottom: 0;
   border-radius: 8px;
-  padding-top: 12px;
+  display: flex;
   padding-right: 10px;
   padding-left: 10px;
   padding-bottom: 16px;
@@ -10,11 +10,21 @@
   background: #292D32;
 }
 
+.div-chat-input::before {
+  content: '';
+  background: #292d32;
+  height: 1.5rem;
+}
+
+.div-chat-input::after {
+  content: '';
+  background: transparent;
+  height: 34px;
+}
+
 .chat-input {
-  right: 10px;
   display: flex;
   align-items: center;
-  bottom: 10px;
   min-height: 64px;
   max-height: 144px;
   border-radius: 12px;

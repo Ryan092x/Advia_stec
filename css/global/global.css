@@ -18,6 +18,10 @@
   }
   body {
     margin-right: 24px;
+    margin-bottom: 34px;
+  }
+  main {
+    height: calc(100vh - 34px);
   }
 }
 
@@ -79,7 +83,7 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #9494941f;
+  background-color: transparent;
 }
 
 ::-webkit-scrollbar-button {
@@ -94,7 +98,7 @@ a {
 
 /* Cor da alça da barra de rolagem */
 ::-moz-scrollbar-thumb {
-  background-color: #9494947a;
+  background-color: transparent;
 }
 
 /* Remover setas */
@@ -104,4 +108,12 @@ a {
 
 .dn {
   display: none;
+}
+
+.espacamento-chat-mob {
+  margin-bottom: 2rem;
+}
+
+body {
+  padding-bottom: env(safe-area-inset-bottom); /* Considera a área segura para dispositivos com notch ou bordas curvadas */
 }
