@@ -53,6 +53,12 @@ function processInput() {
   }
 
   const chatLog = document.getElementById("chat-log");
+
+  const mscontentElements = document.querySelectorAll(".espacamento-chat-mob");
+  mscontentElements.forEach((mscontent) => {
+    mscontent.classList.remove("espacamento-chat-mob");
+  });
+
   chatLog.innerHTML +=
     '<div class="user-message">' +
     '<div class ="user-img">' +

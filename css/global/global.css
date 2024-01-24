@@ -89,3 +89,7 @@ a {
 .dn {
   display: none;
 }
+
+.espacamento-chat-mob {
+  margin-bottom: 6rem;
+}
