@@ -26,31 +26,45 @@
 }
 
 .more-input {
-  width: 24px;
-  height: 24px;
-  cursor: pointer;
-  padding: 10px;
-  flex-shrink: 0;
-  background: transparent;
-  border-radius: 10px;
-}
-
-.material-symbols-rounded-button {
   display: flex;
   align-items: center;
-  width: max-content;
-  height: max-content;
-}
-
-.material-symbols-rounded {
-  width: 24px;
-  height: 24px;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 0.75rem;
   cursor: pointer;
+  margin-right: 0.5rem;
   flex-shrink: 0;
   background: transparent;
-  margin-right: 6px;
+}
+
+.more-input svg {
+  background: transparent;
+  height: 24px;
+  width: 24px;
+  fill: #E3E9EE;
+}
+
+.more-input:hover svg {
+  fill: #be87ff;
+}
+
+.but-send-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 0.75rem;
+  margin-right: 0.5rem;
+  background: transparent;
+}
+
+.but-send-input svg {
+  cursor: pointer;
+  background: transparent;
+  fill: #f1f5f9;
   color: #f1f5f9;
-  padding: 10px;
   border-radius: 10px;
 }
 
