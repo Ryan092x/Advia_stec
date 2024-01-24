@@ -162,13 +162,13 @@
   height: max-content;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   font-weight: 600;
   color: #fcfdfe;
 }
 
 .suggestion-text {
   background: transparent;
+  margin-right: auto;
 }
 
 .svg-pic {
@@ -182,9 +182,12 @@
   background-color: #735ffa;
 }
 
-.svg-pic img {
+.svg-pic svg {
   background: transparent;
   fill: #fcfdfe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .seta-h {
@@ -199,5 +202,9 @@
 .space {
   width: 100%;
   height: 200px;
+  background: transparent;
+}
+
+#gerador-doc-msg {
   background: transparent;
 }

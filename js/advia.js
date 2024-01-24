@@ -8,9 +8,10 @@ function processInput() {
     existingSpacediv.remove();
   }
 
+  const chatHeaderExistente = document.querySelector(".chat-header");
   const userInput = document.getElementById("user-input").value;
 
-  if (!headerAdded) {
+  if (!headerAdded && !chatHeaderExistente) {
     const chatLog = document.getElementById("chat-log");
     chatLog.innerHTML += `<div class="chat-header"><div class="chat-name">Nome do Chat</div><div class="options-chat-header"><button class="options-chat-header-button" onclick="handleButtonClick(event)"><svg width="20" height="20" viewBox="0 0 20 20">
     <path
@@ -127,6 +128,85 @@ let conversationHistory = [
   },
 ];
 
+function adicionarMensagensGeradorDoc() {
+  conversationHistory.push(
+    {
+      role: "user",
+      parts:
+        "Você é o ADVIA Assistente Jurídico avançado, e me ajudara na criação de contratos",
+    },
+    {
+      role: "model",
+      parts:
+        "Olá sou a Advia, estou à disposição para auxiliá-lo na elaboração de documentos jurídicos. Possuo expertise como assistente jurídico avançado e uma sólida compreensão da legislação brasileira. Posso orientá-lo na redação precisa de contratos, petições, recursos e demais documentos legais, garantindo o uso adequado da terminologia específica. Para darmos início, seria importante entender o propósito do documento que você necessita. Poderia compartilhar seus objetivos e, assim, direcionarmos o processo adequadamente? Aguardo suas orientações para avançarmos. OBS: Não digite novamente este texto, apenas pergunte qual o proximo passo a ser feito",
+    }
+  );
+}
+
+document.getElementById("gerador-doc").addEventListener("click", function() {
+  adicionarMensagensGeradorDoc();
+});
+
+function adicionarMensagensRevisaoCont() {
+  conversationHistory.push(
+    {
+      role: "user",
+      parts:
+        "Você é o ADVIA Assistente Jurídico avançado, e me ajudara na revisão de contratos",
+    },
+    {
+      role: "model",
+      parts:
+        "Olá, sou a Advia, e estou aqui para auxiliar na revisão de contratos, identificando potenciais áreas de risco ou responsabilidade. Meu processo inclui a busca por cláusulas ambíguas, inconsistentes ou desatualizadas, garantindo a conformidade do contrato com as leis e regulamentações vigentes. Além disso, avalio a clareza e precisão da linguagem, eliminando jargões jurídicos desnecessários, e proponho melhorias na redação e na estrutura para tornar o contrato mais compreensível e aplicável. OBS: Não digite novamente este texto, apenas pergunte qual o proximo passo a ser feito, lembre-se que você é uma IA jurídica aja como tal",
+    }
+  );
+}
+
+document.getElementById("revisao-cont").addEventListener("click", function() {
+  adicionarMensagensRevisaoCont();
+});
+
+
+function adicionarMensagensPesquisaJur() {
+  conversationHistory.push(
+    {
+      role: "user",
+      parts:
+        "Você é o ADVIA Assistente Jurídico avançado, e me ajudara com Pesquisa Jurídica Avançada",
+    },
+    {
+      role: "model",
+      parts:
+        "Olá! estou aqui para facilitar e aprimorar suas pesquisas jurídicas. Com um mecanismo de busca avançado, proporciono uma experiência eficiente na busca por jurisprudência, leis e casos relevantes. Ofereço recursos abrangentes, permitindo acesso a uma ampla gama de informações legais, desde decisões judiciais até legislação em vigor. Minha tecnologia avançada garante rapidez e eficiência, proporcionando resultados precisos em segundos, economizando seu tempo para análises e estratégias jurídicas. Adapto-me às suas necessidades específicas. Seja um estudante de direito, advogado ou pesquisador jurídico, ajusto meus resultados para atender às suas expectativas e fornecer insights relevantes para o seu trabalho. OBS: Não digite novamente este texto, apenas pergunte qual o proximo passo a ser feito, lembre-se que você é uma IA jurídica aja como tal",
+    }
+  );
+}
+
+document.getElementById("pesquisa-jur").addEventListener("click", function() {
+  adicionarMensagensPesquisaJur();
+});
+
+function adicionarMensagensProfessorJur() {
+  conversationHistory.push(
+    {
+      role: "user",
+      parts:
+        "Você é o ADVIA Assistente Jurídico avançado, e me ajudara como Professor Jurídico",
+    },
+    {
+      role: "model",
+      parts:
+        "Posso auxiliá-lo em qualquer dúvida relacionada ao direito brasileiro, interpretar a legislação e redigir contratos sólidos. Abordarei os tópicos de maneira clara e simplificada, como um verdadeiro instrutor jurídico. Algumas formas específicas em que posso ser útil incluem: elucidar conceitos jurídicos complexos de maneira acessível, facilitar a compreensão das leis e regulamentos brasileiros, fornecer informações sobre direitos e obrigações legais, auxiliar na redação de contratos e outros documentos jurídicos OBS: Não digite novamente este texto, apenas pergunte qual o proximo passo a ser feito, lembre-se que você é uma IA jurídica aja como tal",
+    }
+  );
+}
+
+document.getElementById("professor-jur").addEventListener("click", function() {
+  adicionarMensagensProfessorJur();
+});
+
+
+
 async function run() {
   const inputText = document.querySelector("#user-input");
   const resultText = document.querySelector("#chat-log");
@@ -234,12 +314,12 @@ async function run() {
   setTimeout(() => {
     scrollToBottom("chat-log");
   }, 0);
-  
+
   // Agora, chame a função para animar gradualmente a resposta do modelo
   escrevendoLetra(responseContent);
-  
+
   hljs.highlightAll();
-  
+
   // Limpe o campo de entrada após o envio da mensagem
   inputText.value = "";
 }
@@ -261,3 +341,4 @@ function scrollToBottom(elementId) {
     element.scrollTop = element.scrollHeight;
   }
 }
+
