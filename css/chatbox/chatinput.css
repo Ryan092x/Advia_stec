@@ -5,7 +5,7 @@
   display: flex;
   padding-right: 10px;
   padding-left: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 16px;
   width: 100%;
   background: #292D32;
 }
@@ -13,7 +13,7 @@
 @media (max-width: 770px) {
   .div-chat-input {
     position: fixed;
-    bottom: 10px;
+    bottom: 0px;
     border-radius: 12px 12px 0px 0px;
   }
   .main {
