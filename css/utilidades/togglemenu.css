@@ -113,3 +113,82 @@ main {
   display: block;
   opacity: 1;
 }
+
+.botao-menu-pc {
+  background: #292D32;
+  width: 44px;
+  height: 44px;
+  border-radius: 9999px; 
+  margin-top: 34px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  margin-right: 18px;
+  margin-left: 18px;
+  z-index: 3;
+}
+
+button.icon-menu-pc {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.icon-menu-pc::after,
+.icon-menu-pc::before {
+  content: '';
+  width: 16px;
+  height: 3px;
+  display: block;
+  background: #E3E9EE;
+  transition: transform 0.3s ease;
+}
+
+.icon-menu-pc {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.icon-menu-pc::before {
+  transform-origin: center;
+  transform: rotate(0deg);
+}
+
+.icon-menu-pc::after {
+  transform-origin: center;
+  transform: rotate(0deg);
+}
+
+.icon-menu-pc.ativo::before {
+  transform-origin: center;
+  transform: rotate(-45deg) translate(-1.5px, 3px);
+}
+
+.icon-menu-pc.ativo::after {
+  transform-origin: center;
+  transform: rotate(45deg) translate(-1.5px, -3px); 
+}
+
+.sidebar-pc {
+  display: none;
+  width: max-content;
+  height: 100%;
+}
+
+@media (min-width: 770px) {
+  .sidebar-pc {
+    display: initial;
+  }
+}
+
+.sidebar-pc.ativo {
+  width: 260px;
+  height: 100%;
+}

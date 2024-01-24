@@ -1,4 +1,5 @@
 .chat-menu {
+  position: relative;
   margin-top: 34px;
   background: #292d32;
   width: auto;
@@ -9,10 +10,27 @@
   align-items: center;
 }
 
-.chat-menu img {
+.chat-menu img:nth-child(1) {
   cursor: pointer;
   background: transparent;
   margin-right: 22px;
   margin-left: 22px;
-  height: 24px;
+  height: 22px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.chat-menu img:nth-child(2) {
+  background: transparent;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-right: 22px;
+}
+
+.chat-menu a {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  box-sizing: border-box;
+  background: transparent;
 }

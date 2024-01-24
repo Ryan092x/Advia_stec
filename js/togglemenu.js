@@ -14,3 +14,8 @@ overlay.addEventListener('click', () => {
   sidebar.classList.toggle("ativo");
   overlay.classList.toggle("ativo");
 })
+
+document.querySelector('.botao-menu-pc').addEventListener('click', () => {
+  document.querySelector('.icon-menu-pc').classList.toggle('ativo');
+  document.querySelector('.sidebar-pc').classList.toggle('ativo');
+});

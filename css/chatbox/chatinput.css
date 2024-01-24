@@ -5,9 +5,19 @@
   display: flex;
   padding-right: 10px;
   padding-left: 10px;
-  padding-bottom: 16px;
+  padding-bottom: 10px;
   width: 100%;
   background: #292D32;
+}
+
+@media (max-width: 770px) {
+  .div-chat-input {
+    padding-bottom: 3rem;
+    border-radius: 12px 12px 0px 0px;
+  }
+  .main {
+    border-radius: 0px;
+  }
 }
 
 .div-chat-input::before {

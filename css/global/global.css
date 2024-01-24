@@ -17,6 +17,8 @@
     display: none;
   }
   body {
+    display: grid;
+    grid-template-columns: auto 1fr;
     margin-right: 24px;
     margin-bottom: 34px;
   }
