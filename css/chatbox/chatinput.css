@@ -17,6 +17,7 @@
   }
   .main {
     border-radius: 0px;
+    overflow-y: auto;
   }
 }
 
