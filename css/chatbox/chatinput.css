@@ -1,17 +1,26 @@
+.div-chat-input {
+  position: absolute;
+  bottom: 0;
+  border-radius: 8px;
+  padding-top: 12px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 16px;
+  width: 100%;
+  background: #292D32;
+}
+
 .chat-input {
-  position: fixed;
-  bottom: 10px;
-  left: 10px;
   right: 10px;
   display: flex;
   align-items: center;
+  bottom: 10px;
   min-height: 64px;
   max-height: 144px;
   border-radius: 12px;
   background: #292D32;
   border: 1px solid #393e44;
   width: calc(100% - 20px);
-  box-shadow: 0 0 10px 16px #292D32;
 }
 
 .chat-input img:nth-child(1) {

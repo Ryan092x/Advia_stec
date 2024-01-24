@@ -5,6 +5,22 @@
   overflow-y: hidden;
 }
 
+.chat-menu {
+  display: none;
+}
+
+@media (min-width: 770px) {
+  .chat-menu {
+    display: grid;
+  }
+  .mob {
+    display: none;
+  }
+  body {
+    margin-right: 24px;
+  }
+}
+
 *:active {
   outline: none;
   -webkit-tap-highlight-color: transparent;
@@ -88,8 +104,4 @@ a {
 
 .dn {
   display: none;
-}
-
-.espacamento-chat-mob {
-  margin-bottom: 9.5rem;
 }

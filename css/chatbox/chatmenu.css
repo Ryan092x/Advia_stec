@@ -1,0 +1,18 @@
+.chat-menu {
+  margin-top: 34px;
+  background: #292d32;
+  width: auto;
+  height: 64px;
+  border-radius: 12px 12px 0px 0px;
+  border-bottom: 1px solid #393e44;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.chat-menu img {
+  cursor: pointer;
+  background: transparent;
+  margin-right: 22px;
+  margin-left: 22px;
+  height: 24px;
+}

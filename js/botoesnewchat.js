@@ -269,7 +269,7 @@ function iniciarChatPesquisaJur() {
     <div class="gpt-img">
       <img src="img/adviagpt.svg" alt="Advia" width="32" height="32">
     </div>
-    <div class="mscontent espacamento-chat-mob digitando"></div>
+    <div class="mscontent digitando"></div>
   </div>`;
 
   // Chama a função para iniciar o efeito de "digitando"
