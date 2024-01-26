@@ -1,8 +1,8 @@
 .chat-menu {
   position: relative;
-  margin-top: 34px;
   background: #292d32;
   width: auto;
+  margin-top: 34px;
   height: 64px;
   border-radius: 12px 12px 0px 0px;
   border-bottom: 1px solid #393e44;

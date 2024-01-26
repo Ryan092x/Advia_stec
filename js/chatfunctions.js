@@ -1,4 +1,5 @@
 const showChatFunctions = document.querySelector('.toggle-back-button');
+const showChatFunctionsMob = document.getElementById('botao-abrir-functions-mob');
 const backChatFunctions = document.querySelector('.toggle-functions');
 const chatFunctions = document.querySelector('.chat-functions');
 const overlay2 = document.querySelector('.overlay2');
@@ -7,10 +8,16 @@ const conteudoFunctions = document.querySelector('.conteudo-functions');
 function toggleChatFunctions() {
   chatFunctions.classList.toggle('ativo');
   overlay2.classList.toggle('ativo');
-  conteudoFunctions.classList.toggle('ativo', chatFunctions.classList.contains('ativo'));
+  const isChatFunctionsAtivo = chatFunctions.classList.contains('ativo');
+  conteudoFunctions.classList.toggle('ativo', isChatFunctionsAtivo);
 }
 
 showChatFunctions.addEventListener('click', (event) => {
+  event.stopPropagation();
+  toggleChatFunctions();
+});
+
+showChatFunctionsMob.addEventListener('click', (event) => {
   event.stopPropagation();
   toggleChatFunctions();
 });

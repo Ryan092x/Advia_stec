@@ -1,6 +1,6 @@
 .div-chat-input {
-  position: absolute;
-  bottom: 0;
+  position: fixed;
+  bottom: 0px;
   border-radius: 8px;
   display: flex;
   padding-right: 10px;
@@ -8,30 +8,14 @@
   padding-bottom: 16px;
   width: 100%;
   background: #292D32;
+  border-radius: 12px 12px 0px 0px;
 }
 
 @media (max-width: 770px) {
-  .div-chat-input {
-    position: fixed;
-    bottom: 0px;
-    border-radius: 12px 12px 0px 0px;
-  }
   .main {
     border-radius: 0px;
     overflow-y: auto;
   }
-}
-
-.div-chat-input::before {
-  content: '';
-  background: #292d32;
-  height: 1.5rem;
-}
-
-.div-chat-input::after {
-  content: '';
-  background: transparent;
-  height: 34px;
 }
 
 .chat-input {

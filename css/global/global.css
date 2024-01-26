@@ -16,15 +16,21 @@
   .mob {
     display: none;
   }
-  body {
+  body.chat-pg {
     display: grid;
     grid-template-columns: auto 1fr;
     margin-right: 24px;
-    margin-bottom: 34px;
   }
   main {
-    height: calc(100vh - 34px);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
+}
+
+main.settings {
+  display: block;
 }
 
 *:active {
@@ -113,7 +119,7 @@ a {
 }
 
 .espacamento-chat-mob {
-  margin-bottom: 2rem;
+  margin-bottom: 8rem;
 }
 
 body {
