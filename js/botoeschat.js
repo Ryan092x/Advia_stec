@@ -1,23 +1,28 @@
 // Like e Deslike
 
 function likeDislikeClick(button) {
-  const likeButton = document.querySelector('.like');
-  const dislikeButton = document.querySelector('.deslike');
+  const container = button.closest('.buttons-mscontent'); // Assumindo que .resposta seja o contêiner comum dos botões
+  const likeButtons = container.querySelectorAll('.like');
+  const dislikeButtons = container.querySelectorAll('.deslike');
 
   if (button.classList.contains('like')) {
-      if (likeButton.classList.contains('click')) {
-          likeButton.classList.remove('click');
+    likeButtons.forEach(likeButton => {
+      if (likeButton === button) {
+        likeButton.classList.toggle('click');
       } else {
-          likeButton.classList.add('click');
-          dislikeButton.classList.remove('click');
+        likeButton.classList.remove('click');
       }
+    });
+    dislikeButtons.forEach(dislikeButton => dislikeButton.classList.remove('click'));
   } else if (button.classList.contains('deslike')) {
-      if (dislikeButton.classList.contains('click')) {
-          dislikeButton.classList.remove('click');
+    dislikeButtons.forEach(dislikeButton => {
+      if (dislikeButton === button) {
+        dislikeButton.classList.toggle('click');
       } else {
-          dislikeButton.classList.add('click');
-          likeButton.classList.remove('click');
+        dislikeButton.classList.remove('click');
       }
+    });
+    likeButtons.forEach(likeButton => likeButton.classList.remove('click'));
   }
 }
 

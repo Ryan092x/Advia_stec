@@ -57,11 +57,11 @@
   background: transparent;
   height: 24px;
   width: 24px;
-  fill: #E3E9EE;
+  fill: #7c878e;
 }
 
 .more-input:hover svg {
-  fill: #be87ff;
+  fill: #f1f5f9;
 }
 
 .but-send-input {
@@ -78,9 +78,12 @@
 .but-send-input svg {
   cursor: pointer;
   background: transparent;
-  fill: #f1f5f9;
-  color: #f1f5f9;
+  fill: #7c878e;
   border-radius: 10px;
+}
+
+.but-send-input svg.svg-fill {
+  fill: #f1f5f9;
 }
 
 .chat-input textarea {
@@ -91,7 +94,7 @@
   line-height: 1.5rem;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  color: #7c878e;
+  color: #f1f5f9;
   border: none;
   outline: none;
   background: transparent;

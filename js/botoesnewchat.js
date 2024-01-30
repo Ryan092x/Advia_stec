@@ -44,7 +44,7 @@ function iniciarChatGeradorDoc() {
 
   // Adiciona cabeçalho se ainda não tiver sido adicionado
   if (!headerAdded) {
-    chatLog.innerHTML += `<div class="chat-header"><div class="chat-name">Nome do Chat</div><div class="options-chat-header"><button class="options-chat-header-button" onclick="handleButtonClick(event)"><svg width="20" height="20" viewBox="0 0 20 20">
+    chatLog.innerHTML += `<div class="chat-header"><div class="chat-name"><span class="svg-ch"><svg class="" width="20" height="20" viewBox="0 0 20 20"><path d="M14.862 1.663H5.131L4 1.688c-.329.027-.657.086-.972.247a2.5 2.5 0 0 0-1.093 1.093c-.161.315-.22.643-.247.972-.025.312-.025.691-.025 1.13v4.775c0 .361 0 .541.074.706.06.133.182.275.304.354.151.098.307.122.618.17.497.076 1 .111 1.503.111 2.755 0 5.249-1.113 7.059-2.917H9.996c-.46 0-.833-.373-.833-.833s.373-.833.833-.833h3.333c.46 0 .833.373.833.833v3.333c0 .46-.373.833-.833.833s-.833-.373-.833-.833V9.411c-2.117 2.16-5.068 3.502-8.333 3.502a11.8 11.8 0 0 1-.862-.031c-.635-.046-.953-.07-1.144.016a.77.77 0 0 0-.394.366c-.099.185-.099.469-.099 1.037v.562l.025 1.13c.027.33.086.657.247.972a2.5 2.5 0 0 0 1.093 1.093c.315.161.643.22.972.247.312.025.691.025 1.13.025h9.731l1.13-.025c.329-.027.657-.086.973-.247a2.5 2.5 0 0 0 1.093-1.093c.161-.315.22-.643.247-.972.025-.312.025-.691.025-1.13V5.131L18.304 4c-.027-.329-.086-.657-.247-.972a2.5 2.5 0 0 0-1.093-1.093c-.315-.161-.643-.22-.973-.247-.312-.025-.691-.025-1.13-.025z"></path></svg></span>Gerador de Documentos</div><div class="options-chat-header"><button class="options-chat-header-button" onclick="handleButtonClick(event)"><svg width="20" height="20" viewBox="0 0 20 20">
     <path
       d="M8.333 9.997c0-.921.746-1.667 1.667-1.667s1.667.746 1.667 1.667-.746 1.667-1.667 1.667-1.667-.746-1.667-1.667zm5.833 0c0-.921.746-1.667 1.667-1.667s1.667.746 1.667 1.667-.746 1.667-1.667 1.667-1.667-.746-1.667-1.667zm-11.667 0c0-.921.746-1.667 1.667-1.667s1.667.746 1.667 1.667-.746 1.667-1.667 1.667S2.5 10.917 2.5 9.997z">
     </path>
@@ -69,7 +69,6 @@ function iniciarChatGeradorDoc() {
 </div>
 <div class="div-button-option-chat-header">
 <button class="ultimo"><div><svg width="16" height="16" viewBox="0 0 20 20"><path fill="#FF6C3E" d="M12.5 1.5a1 1 0 0 1 .117 1.993L12.5 3.5h-5a1 1 0 0 1-.117-1.993L7.5 1.5h5zm5 2.5a1 1 0 0 1 .117 1.993L17.5 6h-.731l-.561 8.402-.036.458-.041.394c-.08.67-.195 1.069-.428 1.479a3.5 3.5 0 0 1-1.515 1.417l-.182.083-.089.036-.18.062-.19.05-.101.021-.219.034-.249.025-.288.018-.523.015-.909.006-3.222-.003-.564-.011-.31-.015-.268-.022-.12-.014-.219-.034-.101-.021-.189-.05-.091-.03-.179-.069-.182-.083a3.5 3.5 0 0 1-1.515-1.417l-.095-.176-.08-.174-.068-.18-.03-.095-.053-.204-.045-.231-.039-.266-.035-.309-.033-.36-.032-.42L3.23 6H2.5a1 1 0 0 1-.117-1.993L2.5 4h15zm-2.736 2H5.235l.529 7.92.054.715.026.27.026.221.027.179.029.144.032.116.018.05.039.088.021.04a1.5 1.5 0 0 0 .649.607l.084.036.047.016.107.027.131.022.162.017.2.013.388.013.514.006h3.365l.514-.006.388-.013.2-.013.162-.017.131-.022.107-.027.09-.033.041-.019a1.5 1.5 0 0 0 .649-.607c.025-.045.048-.096.069-.157l.039-.138.035-.175.047-.348.029-.301.067-.924.513-7.7zM8.333 7.75a1 1 0 0 1 .993.883l.007.117v4.167a1 1 0 0 1-1.993.117l-.007-.117V8.75a1 1 0 0 1 1-1zm3.333 0a1 1 0 0 1 .993.883l.007.117v4.167a1 1 0 0 1-1.993.117l-.007-.117V8.75a1 1 0 0 1 1-1z"></path></svg></div>Deletar</button>
-</div>
 </div>
 </div>`;
     headerAdded = true;
@@ -111,7 +110,7 @@ function iniciarChatRevisaoCont() {
 
   // Adiciona cabeçalho se ainda não tiver sido adicionado
   if (!headerAdded) {
-    chatLog.innerHTML += `<div class="chat-header"><div class="chat-name">Nome do Chat</div><div class="options-chat-header"><button class="options-chat-header-button" onclick="handleButtonClick(event)"><svg width="20" height="20" viewBox="0 0 20 20">
+    chatLog.innerHTML += `<div class="chat-header"><div class="chat-name"><span class="svg-ch"><svg class="" width="20" height="20" viewBox="0 0 20 20"><path d="M14.862 1.663H5.131L4 1.688c-.329.027-.657.086-.972.247a2.5 2.5 0 0 0-1.093 1.093c-.161.315-.22.643-.247.972-.025.312-.025.691-.025 1.13v4.775c0 .361 0 .541.074.706.06.133.182.275.304.354.151.098.307.122.618.17.497.076 1 .111 1.503.111 2.755 0 5.249-1.113 7.059-2.917H9.996c-.46 0-.833-.373-.833-.833s.373-.833.833-.833h3.333c.46 0 .833.373.833.833v3.333c0 .46-.373.833-.833.833s-.833-.373-.833-.833V9.411c-2.117 2.16-5.068 3.502-8.333 3.502a11.8 11.8 0 0 1-.862-.031c-.635-.046-.953-.07-1.144.016a.77.77 0 0 0-.394.366c-.099.185-.099.469-.099 1.037v.562l.025 1.13c.027.33.086.657.247.972a2.5 2.5 0 0 0 1.093 1.093c.315.161.643.22.972.247.312.025.691.025 1.13.025h9.731l1.13-.025c.329-.027.657-.086.973-.247a2.5 2.5 0 0 0 1.093-1.093c.161-.315.22-.643.247-.972.025-.312.025-.691.025-1.13V5.131L18.304 4c-.027-.329-.086-.657-.247-.972a2.5 2.5 0 0 0-1.093-1.093c-.315-.161-.643-.22-.973-.247-.312-.025-.691-.025-1.13-.025z"></path></svg></span>Revisão de Contrato</div><div class="options-chat-header"><button class="options-chat-header-button" onclick="handleButtonClick(event)"><svg width="20" height="20" viewBox="0 0 20 20">
     <path
       d="M8.333 9.997c0-.921.746-1.667 1.667-1.667s1.667.746 1.667 1.667-.746 1.667-1.667 1.667-1.667-.746-1.667-1.667zm5.833 0c0-.921.746-1.667 1.667-1.667s1.667.746 1.667 1.667-.746 1.667-1.667 1.667-1.667-.746-1.667-1.667zm-11.667 0c0-.921.746-1.667 1.667-1.667s1.667.746 1.667 1.667-.746 1.667-1.667 1.667S2.5 10.917 2.5 9.997z">
     </path>
@@ -136,7 +135,6 @@ function iniciarChatRevisaoCont() {
 </div>
 <div class="div-button-option-chat-header">
 <button class="ultimo"><div><svg width="16" height="16" viewBox="0 0 20 20"><path fill="#FF6C3E" d="M12.5 1.5a1 1 0 0 1 .117 1.993L12.5 3.5h-5a1 1 0 0 1-.117-1.993L7.5 1.5h5zm5 2.5a1 1 0 0 1 .117 1.993L17.5 6h-.731l-.561 8.402-.036.458-.041.394c-.08.67-.195 1.069-.428 1.479a3.5 3.5 0 0 1-1.515 1.417l-.182.083-.089.036-.18.062-.19.05-.101.021-.219.034-.249.025-.288.018-.523.015-.909.006-3.222-.003-.564-.011-.31-.015-.268-.022-.12-.014-.219-.034-.101-.021-.189-.05-.091-.03-.179-.069-.182-.083a3.5 3.5 0 0 1-1.515-1.417l-.095-.176-.08-.174-.068-.18-.03-.095-.053-.204-.045-.231-.039-.266-.035-.309-.033-.36-.032-.42L3.23 6H2.5a1 1 0 0 1-.117-1.993L2.5 4h15zm-2.736 2H5.235l.529 7.92.054.715.026.27.026.221.027.179.029.144.032.116.018.05.039.088.021.04a1.5 1.5 0 0 0 .649.607l.084.036.047.016.107.027.131.022.162.017.2.013.388.013.514.006h3.365l.514-.006.388-.013.2-.013.162-.017.131-.022.107-.027.09-.033.041-.019a1.5 1.5 0 0 0 .649-.607c.025-.045.048-.096.069-.157l.039-.138.035-.175.047-.348.029-.301.067-.924.513-7.7zM8.333 7.75a1 1 0 0 1 .993.883l.007.117v4.167a1 1 0 0 1-1.993.117l-.007-.117V8.75a1 1 0 0 1 1-1zm3.333 0a1 1 0 0 1 .993.883l.007.117v4.167a1 1 0 0 1-1.993.117l-.007-.117V8.75a1 1 0 0 1 1-1z"></path></svg></div>Deletar</button>
-</div>
 </div>
 </div>`;
     headerAdded = true;
@@ -172,7 +170,7 @@ function iniciarChatProfessorJur() {
 
   // Adiciona cabeçalho se ainda não tiver sido adicionado
   if (!headerAdded) {
-    chatLog.innerHTML += `<div class="chat-header"><div class="chat-name">Nome do Chat</div><div class="options-chat-header"><button class="options-chat-header-button" onclick="handleButtonClick(event)"><svg width="20" height="20" viewBox="0 0 20 20">
+    chatLog.innerHTML += `<div class="chat-header"><div class="chat-name"><span class="svg-ch"><svg class="" width="20" height="20" viewBox="0 0 20 20"><path d="M14.862 1.663H5.131L4 1.688c-.329.027-.657.086-.972.247a2.5 2.5 0 0 0-1.093 1.093c-.161.315-.22.643-.247.972-.025.312-.025.691-.025 1.13v4.775c0 .361 0 .541.074.706.06.133.182.275.304.354.151.098.307.122.618.17.497.076 1 .111 1.503.111 2.755 0 5.249-1.113 7.059-2.917H9.996c-.46 0-.833-.373-.833-.833s.373-.833.833-.833h3.333c.46 0 .833.373.833.833v3.333c0 .46-.373.833-.833.833s-.833-.373-.833-.833V9.411c-2.117 2.16-5.068 3.502-8.333 3.502a11.8 11.8 0 0 1-.862-.031c-.635-.046-.953-.07-1.144.016a.77.77 0 0 0-.394.366c-.099.185-.099.469-.099 1.037v.562l.025 1.13c.027.33.086.657.247.972a2.5 2.5 0 0 0 1.093 1.093c.315.161.643.22.972.247.312.025.691.025 1.13.025h9.731l1.13-.025c.329-.027.657-.086.973-.247a2.5 2.5 0 0 0 1.093-1.093c.161-.315.22-.643.247-.972.025-.312.025-.691.025-1.13V5.131L18.304 4c-.027-.329-.086-.657-.247-.972a2.5 2.5 0 0 0-1.093-1.093c-.315-.161-.643-.22-.973-.247-.312-.025-.691-.025-1.13-.025z"></path></svg></span>Chat com Professor Jurídico</div><div class="options-chat-header"><button class="options-chat-header-button" onclick="handleButtonClick(event)"><svg width="20" height="20" viewBox="0 0 20 20">
     <path
       d="M8.333 9.997c0-.921.746-1.667 1.667-1.667s1.667.746 1.667 1.667-.746 1.667-1.667 1.667-1.667-.746-1.667-1.667zm5.833 0c0-.921.746-1.667 1.667-1.667s1.667.746 1.667 1.667-.746 1.667-1.667 1.667-1.667-.746-1.667-1.667zm-11.667 0c0-.921.746-1.667 1.667-1.667s1.667.746 1.667 1.667-.746 1.667-1.667 1.667S2.5 10.917 2.5 9.997z">
     </path>
@@ -198,7 +196,6 @@ function iniciarChatProfessorJur() {
 <div class="div-button-option-chat-header">
 <button class="ultimo"><div><svg width="16" height="16" viewBox="0 0 20 20"><path fill="#FF6C3E" d="M12.5 1.5a1 1 0 0 1 .117 1.993L12.5 3.5h-5a1 1 0 0 1-.117-1.993L7.5 1.5h5zm5 2.5a1 1 0 0 1 .117 1.993L17.5 6h-.731l-.561 8.402-.036.458-.041.394c-.08.67-.195 1.069-.428 1.479a3.5 3.5 0 0 1-1.515 1.417l-.182.083-.089.036-.18.062-.19.05-.101.021-.219.034-.249.025-.288.018-.523.015-.909.006-3.222-.003-.564-.011-.31-.015-.268-.022-.12-.014-.219-.034-.101-.021-.189-.05-.091-.03-.179-.069-.182-.083a3.5 3.5 0 0 1-1.515-1.417l-.095-.176-.08-.174-.068-.18-.03-.095-.053-.204-.045-.231-.039-.266-.035-.309-.033-.36-.032-.42L3.23 6H2.5a1 1 0 0 1-.117-1.993L2.5 4h15zm-2.736 2H5.235l.529 7.92.054.715.026.27.026.221.027.179.029.144.032.116.018.05.039.088.021.04a1.5 1.5 0 0 0 .649.607l.084.036.047.016.107.027.131.022.162.017.2.013.388.013.514.006h3.365l.514-.006.388-.013.2-.013.162-.017.131-.022.107-.027.09-.033.041-.019a1.5 1.5 0 0 0 .649-.607c.025-.045.048-.096.069-.157l.039-.138.035-.175.047-.348.029-.301.067-.924.513-7.7zM8.333 7.75a1 1 0 0 1 .993.883l.007.117v4.167a1 1 0 0 1-1.993.117l-.007-.117V8.75a1 1 0 0 1 1-1zm3.333 0a1 1 0 0 1 .993.883l.007.117v4.167a1 1 0 0 1-1.993.117l-.007-.117V8.75a1 1 0 0 1 1-1z"></path></svg></div>Deletar</button>
 </div>
-</div>
 </div>`;
     headerAdded = true;
   }
@@ -213,7 +210,7 @@ function iniciarChatProfessorJur() {
 
   // Chama a função para iniciar o efeito de "digitando"
   const geradorDocMsg = document.getElementById("professor-jur-msg");
-  const mensagemDigitando = `Posso auxiliá-lo em qualquer dúvida relacionada ao direito brasileiro, interpretar a legislação e redigir contratos sólidos. Abordarei os tópicos de maneira clara e simplificada, como um verdadeiro instrutor jurídico. Algumas formas específicas em que posso ser útil incluem: elucidar conceitos jurídicos complexos de maneira acessível, facilitar a compreensão das leis e regulamentos brasileiros, fornecer informações sobre direitos e obrigações legais, auxiliar na redação de contratos e outros documentos jurídicos`;
+  const mensagemDigitando = `Olá sou a Advia e posso auxiliá-lo em qualquer dúvida relacionada ao direito brasileiro, interpretar a legislação e redigir contratos sólidos. Abordarei os tópicos de maneira clara e simplificada, como um verdadeiro instrutor jurídico. Algumas formas específicas em que posso ser útil incluem: elucidar conceitos jurídicos complexos de maneira acessível, facilitar a compreensão das leis e regulamentos brasileiros, fornecer informações sobre direitos e obrigações legais, auxiliar na redação de contratos e outros documentos jurídicos`;
 
   efeitoDigitando(geradorDocMsg.querySelector('.mscontent'), mensagemDigitando);
 }
@@ -233,7 +230,7 @@ function iniciarChatPesquisaJur() {
 
   // Adiciona cabeçalho se ainda não tiver sido adicionado
   if (!headerAdded) {
-    chatLog.innerHTML += `<div class="chat-header"><div class="chat-name">Nome do Chat</div><div class="options-chat-header"><button class="options-chat-header-button" onclick="handleButtonClick(event)"><svg width="20" height="20" viewBox="0 0 20 20">
+    chatLog.innerHTML += `<div class="chat-header"><div class="chat-name"><span class="svg-ch"><svg class="" width="20" height="20" viewBox="0 0 20 20"><path d="M14.862 1.663H5.131L4 1.688c-.329.027-.657.086-.972.247a2.5 2.5 0 0 0-1.093 1.093c-.161.315-.22.643-.247.972-.025.312-.025.691-.025 1.13v4.775c0 .361 0 .541.074.706.06.133.182.275.304.354.151.098.307.122.618.17.497.076 1 .111 1.503.111 2.755 0 5.249-1.113 7.059-2.917H9.996c-.46 0-.833-.373-.833-.833s.373-.833.833-.833h3.333c.46 0 .833.373.833.833v3.333c0 .46-.373.833-.833.833s-.833-.373-.833-.833V9.411c-2.117 2.16-5.068 3.502-8.333 3.502a11.8 11.8 0 0 1-.862-.031c-.635-.046-.953-.07-1.144.016a.77.77 0 0 0-.394.366c-.099.185-.099.469-.099 1.037v.562l.025 1.13c.027.33.086.657.247.972a2.5 2.5 0 0 0 1.093 1.093c.315.161.643.22.972.247.312.025.691.025 1.13.025h9.731l1.13-.025c.329-.027.657-.086.973-.247a2.5 2.5 0 0 0 1.093-1.093c.161-.315.22-.643.247-.972.025-.312.025-.691.025-1.13V5.131L18.304 4c-.027-.329-.086-.657-.247-.972a2.5 2.5 0 0 0-1.093-1.093c-.315-.161-.643-.22-.973-.247-.312-.025-.691-.025-1.13-.025z"></path></svg></span>Pesquisa Jurídica Avançada</div><div class="options-chat-header"><button class="options-chat-header-button" onclick="handleButtonClick(event)"><svg width="20" height="20" viewBox="0 0 20 20">
     <path
       d="M8.333 9.997c0-.921.746-1.667 1.667-1.667s1.667.746 1.667 1.667-.746 1.667-1.667 1.667-1.667-.746-1.667-1.667zm5.833 0c0-.921.746-1.667 1.667-1.667s1.667.746 1.667 1.667-.746 1.667-1.667 1.667-1.667-.746-1.667-1.667zm-11.667 0c0-.921.746-1.667 1.667-1.667s1.667.746 1.667 1.667-.746 1.667-1.667 1.667S2.5 10.917 2.5 9.997z">
     </path>
@@ -258,7 +255,6 @@ function iniciarChatPesquisaJur() {
 </div>
 <div class="div-button-option-chat-header">
 <button class="ultimo"><div><svg width="16" height="16" viewBox="0 0 20 20"><path fill="#FF6C3E" d="M12.5 1.5a1 1 0 0 1 .117 1.993L12.5 3.5h-5a1 1 0 0 1-.117-1.993L7.5 1.5h5zm5 2.5a1 1 0 0 1 .117 1.993L17.5 6h-.731l-.561 8.402-.036.458-.041.394c-.08.67-.195 1.069-.428 1.479a3.5 3.5 0 0 1-1.515 1.417l-.182.083-.089.036-.18.062-.19.05-.101.021-.219.034-.249.025-.288.018-.523.015-.909.006-3.222-.003-.564-.011-.31-.015-.268-.022-.12-.014-.219-.034-.101-.021-.189-.05-.091-.03-.179-.069-.182-.083a3.5 3.5 0 0 1-1.515-1.417l-.095-.176-.08-.174-.068-.18-.03-.095-.053-.204-.045-.231-.039-.266-.035-.309-.033-.36-.032-.42L3.23 6H2.5a1 1 0 0 1-.117-1.993L2.5 4h15zm-2.736 2H5.235l.529 7.92.054.715.026.27.026.221.027.179.029.144.032.116.018.05.039.088.021.04a1.5 1.5 0 0 0 .649.607l.084.036.047.016.107.027.131.022.162.017.2.013.388.013.514.006h3.365l.514-.006.388-.013.2-.013.162-.017.131-.022.107-.027.09-.033.041-.019a1.5 1.5 0 0 0 .649-.607c.025-.045.048-.096.069-.157l.039-.138.035-.175.047-.348.029-.301.067-.924.513-7.7zM8.333 7.75a1 1 0 0 1 .993.883l.007.117v4.167a1 1 0 0 1-1.993.117l-.007-.117V8.75a1 1 0 0 1 1-1zm3.333 0a1 1 0 0 1 .993.883l.007.117v4.167a1 1 0 0 1-1.993.117l-.007-.117V8.75a1 1 0 0 1 1-1z"></path></svg></div>Deletar</button>
-</div>
 </div>
 </div>`;
     headerAdded = true;
