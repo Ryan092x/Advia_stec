@@ -58,6 +58,9 @@
   #inputFile {
     top: 440px;
   }
+  .chat-log {
+    padding-bottom: 8rem;
+  }
 }
 
 .file-label {

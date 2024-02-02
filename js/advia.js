@@ -374,8 +374,6 @@ async function run() {
   // Agora, chame a função para animar gradualmente a resposta do modelo
   // escrevendoLetra(responseContent);
 
-  hljs.highlightAll();
-
   // Limpe o campo de entrada após o envio da mensagem
   inputText.value = "";
 }
