@@ -1,0 +1,68 @@
+.settings-options-pc {
+  display: none;
+}
+
+@media (min-width:770px) {
+  .settings-barshow {
+    top: 88px;
+  }
+  .settings-pc {
+    height: 92.6vh;
+    background: #292d32;
+    overflow-y: auto;
+    margin-bottom: 34px;
+    border-radius: 0px 0px 12px 12px;
+  }
+  
+  .settings-pc-cont {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    background: #292d32;
+    margin-top: -4.75rem;
+    width: 100%;
+  }
+  .settings-box {
+    border: 0.075rem solid #393e44;
+    border-radius: 1.25rem;
+    width: calc(100% - 10rem);
+    margin-right: auto;
+    margin-left: auto;
+    min-height: auto;
+    max-height: max-content;
+  }
+  .botoes-envio {
+    padding-bottom: 0px;
+  }
+}
+
+@media (min-width:1200px) {
+  .settings-box {
+    width: calc(100% - 26rem);
+  }
+}
+
+#btnabrirFile {
+  position: relative;
+}
+
+#inputFile {
+  position: absolute;
+  z-index: 0;
+  top: 300px;
+  opacity: 0;
+  visibility: 0;
+}
+
+@media (max-width: 770px) {
+  #inputFile {
+    top: 440px;
+  }
+}
+
+.file-label {
+  display: flex;
+  background: transparent;
+  align-items: center;
+  gap: 10px;
+}

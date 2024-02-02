@@ -1,3 +1,12 @@
+.mscontent strong,
+.mscontent ol,
+.mscontent blockquote {
+  background: transparent;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .mscontent p {
   font-family: "Archivo", sans-serif;
   font-weight: 300;
@@ -104,3 +113,8 @@
   fill: #fcfdfe;
 }
 
+@media (max-width: 770px) {
+  main {
+    overflow-y: auto;
+  }
+}

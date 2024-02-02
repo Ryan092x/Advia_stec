@@ -30,7 +30,7 @@
 }
 
 main.settings {
-  display: block;
+  display: flex;
 }
 
 *:active {
@@ -124,4 +124,24 @@ a {
 
 body {
   padding-bottom: env(safe-area-inset-bottom); /* Considera a área segura para dispositivos com notch ou bordas curvadas */
+}
+
+/* Esconda as barras de rolagem, mas permita a rolagem */
+body {
+  scrollbar-width: thin;  /* Para navegadores Firefox */
+  scrollbar-color: transparent transparent;  /* Para navegadores Firefox */
+  overflow: scroll;  /* Para navegadores que suportam a propriedade overflow */
+}
+
+/* Para navegadores WebKit (como Chrome e Safari) */
+::-webkit-scrollbar {
+  width: 0px;  /* Ajuste a largura conforme necessário */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;  /* Torna a barra de rolagem invisível */
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;  /* Torna a trilha invisível */
 }

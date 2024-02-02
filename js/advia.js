@@ -367,7 +367,8 @@ async function run() {
   resultText.appendChild(spacediv);
 
   setTimeout(() => {
-    scrollToBottom("chat-log");
+    const elementId = window.innerWidth < 770 ? "main" : ".div-chat-box";
+    scrollToBottom(elementId);
   }, 0);
 
   // Agora, chame a função para animar gradualmente a resposta do modelo
@@ -391,7 +392,7 @@ function escrevendoLetra(elemento) {
 }
 
 function scrollToBottom(elementId) {
-  const element = document.getElementById(elementId);
+  const element = document.querySelector(elementId);
   if (element) {
     element.scrollTop = element.scrollHeight;
   }
