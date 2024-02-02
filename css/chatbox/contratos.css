@@ -1,0 +1,106 @@
+.mscontent p {
+  font-family: "Archivo", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  background: transparent;
+  word-break: break-word;
+}
+
+.mscontent p + pre {
+  margin-top: 1.5rem;
+}
+
+.mscontent pre + p {
+  margin-top: 1.5rem;
+}
+
+.mscontent pre {
+  border-radius: 1.25rem;
+  border: 1px solid #393e44;
+}
+
+.mscontent code {
+  font-family: monospace;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.01em;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  padding-bottom: 1rem;
+  white-space: pre-wrap;
+  display: flex;
+}
+
+.mscontent li {
+  font-family: "Archivo", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  background: transparent;
+  word-break: break-word;
+}
+
+.mscontent ul {
+  font-family: "Archivo", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  background: transparent;
+  word-break: break-word;
+}
+
+.pers-doc {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #393e44;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  box-sizing: border-box;
+}
+
+.pers-doc-inf {
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: ease;
+  transition-duration: 0.2s;
+  display: flex;
+  align-items: center;
+  font-family: monospace;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.01em;
+  color: #fcfdfe;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.pers-doc-download {
+  display: flex;
+  align-items: center;
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: linear;
+  transition-duration: 0.2s;
+  fill: #fcfdfe;
+  cursor: pointer;
+  background: transparent;
+  box-sizing: border-box;
+}
+.pers-doc-download svg {
+  padding: 6px;
+}
+
+.pers-doc-download:hover {
+  fill: #735ffa;
+}
+
+.pers-doc-inf svg {
+  fill: #fcfdfe;
+}
+

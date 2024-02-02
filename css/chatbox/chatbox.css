@@ -7,7 +7,6 @@ main {
 
 .chat-box {
   min-height: 92.6vh;
-  max-height: 92.6vh;
   background: #292D32;
   overflow-y: auto;
   margin-bottom: 1rem;

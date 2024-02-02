@@ -106,13 +106,13 @@ function resetTextarea() {
 
 // Função para alterar a cor do botão com base no conteúdo do textarea
 function changeButtonColor() {
-  const userInput = document.getElementById('user-input');
-  const svg = document.querySelector('.but-send-input svg');
+  const userInput = document.getElementById("user-input");
+  const svg = document.querySelector(".but-send-input svg");
 
-  if (userInput.value.trim() !== '') {
-    svg.classList.add('svg-fill');
+  if (userInput.value.trim() !== "") {
+    svg.classList.add("svg-fill");
   } else {
-    svg.classList.remove('svg-fill');
+    svg.classList.remove("svg-fill");
   }
 
   resizeTextarea();
@@ -121,16 +121,16 @@ function changeButtonColor() {
 // Adiciona os ouvintes de eventos
 const textarea = document.getElementById("user-input");
 
-textarea.addEventListener("input", function() {
+textarea.addEventListener("input", function () {
   resizeTextarea();
   changeButtonColor();
 });
 
-textarea.addEventListener("blur", function() {
+textarea.addEventListener("blur", function () {
   resetTextarea();
 });
 
-textarea.addEventListener("keydown", function(event) {
+textarea.addEventListener("keydown", function (event) {
   if (event.keyCode == 13) {
     event.preventDefault();
     processInput();
@@ -139,13 +139,13 @@ textarea.addEventListener("keydown", function(event) {
 
 // Função para redefinir a cor do botão após o envio do input
 function resetButtonColor() {
-  const svg = document.querySelector('.but-send-input svg');
-  svg.classList.remove('svg-fill');
+  const svg = document.querySelector(".but-send-input svg");
+  svg.classList.remove("svg-fill");
 }
 
 // Adiciona um ouvinte de evento ao botão
-const sendButton = document.getElementById('myButton');
-sendButton.addEventListener('click', resetButtonColor);
+const sendButton = document.getElementById("myButton");
+sendButton.addEventListener("click", resetButtonColor);
 
 // AdvIA | IA
 
@@ -161,12 +161,12 @@ let conversationHistory = [
   {
     role: "user",
     parts:
-      "Você é o ADVIA Assistente Jurídico avançado e só responde perguntas jurídicas e cria contratos robustos, se embasando na legislação brasileira. Todos os contratos devem ser redigidos em Blockquotes em Markdown",
+      "Você é o ADVIA Assistente Jurídico avançado e só responde perguntas jurídicas e cria contratos robustos, se embasando na legislação brasileira. Todos os contratos devem ser redigidos em Blockquote em Markdown Lembre-se sempre disso é importante para que não sejam enviadas mensagens com layouts errados para o cliente",
   },
   {
     role: "model",
     parts:
-      "Ok, usarei apenas Blockquotes quando for para o corpo dos contratos. Eu sou o Advia Pro, e falo português brasileiro, e te chamarei pelo nome e usarei seus dados qualificados e autorizados para escrever seus contratos. Eu sempre vou terminar minhas respostas sugerindo o próximo passo com base no que eu acho que você precisa. Vamos começar?",
+      "Ok, usarei apenas Blockquote quando for para o corpo dos contratos. Eu sou o Advia Pro, e falo português brasileiro, e te chamarei pelo nome e usarei seus dados qualificados e autorizados para escrever seus contratos. Eu sempre vou terminar minhas respostas sugerindo o próximo passo com base no que eu acho que você precisa. Vamos começar??",
   },
 ];
 
@@ -323,8 +323,9 @@ async function run() {
 
   // Use um elemento temporário para extrair apenas o texto sem tags HTML
   const tempElement = document.createElement("div");
+  //  tempElement.innerHTML = marked.parse(rawText);
   tempElement.innerHTML = marked.parse(rawText);
-  responseContent.textContent = tempElement.textContent;
+  responseContent.innerHTML = tempElement.innerHTML;
 
   // Anexe 'responseContent' ao 'gptMessage'
   gptMessage.appendChild(gptIcon);
@@ -332,6 +333,21 @@ async function run() {
 
   // Anexe 'gptMessage' ao elemento pai no DOM
   resultText.appendChild(gptMessage);
+
+  const preTag = gptMessage.querySelector("pre");
+
+  if (preTag) {
+    // Se a tag <pre> está presente, crie a div com a classe pers-doc
+    const persDocDiv = document.createElement("div");
+    persDocDiv.className = "pers-doc";
+    persDocDiv.innerHTML = `<div class="pers-doc-inf"><svg height="24" viewBox="0 0 48 48" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h48v48H0z" fill="none"></path>
+    <path d="M8 12H4v28c0 2.21 1.79 4 4 4h28v-4H8V12zm32-8H16c-2.21 0-4 1.79-4 4v24c0 2.21 1.79 4 4 4h24c2.21 0 4-1.79 4-4V8c0-2.21-1.79-4-4-4zm-2 18H18v-4h20v4zm-8 8H18v-4h12v4zm8-16H18v-4h20v4z"></path>
+  </svg>Doc</div>
+  <div class="pers-doc-download" onclick="saveContractAsPDF(event)"><svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M22,16 L22,20 C22,21.1045695 21.1045695,22 20,22 L4,22 C2.8954305,22 2,21.1045695 2,20 L2,16 L4,16 L4,20 L20,20 L20,16 L22,16 Z M13,12.5857864 L16.2928932,9.29289322 L17.7071068,10.7071068 L12,16.4142136 L6.29289322,10.7071068 L7.70710678,9.29289322 L11,12.5857864 L11,2 L13,2 L13,12.5857864 Z" fill-rule="evenodd"/></svg></div>`;
+
+    preTag.insertBefore(persDocDiv, preTag.firstChild);
+  }
 
   const buttonsContent = document.createElement("div");
   buttonsContent.className = "buttons-mscontent";
@@ -355,7 +371,7 @@ async function run() {
   }, 0);
 
   // Agora, chame a função para animar gradualmente a resposta do modelo
-  escrevendoLetra(responseContent);
+  // escrevendoLetra(responseContent);
 
   hljs.highlightAll();
 
@@ -380,3 +396,46 @@ function scrollToBottom(elementId) {
     element.scrollTop = element.scrollHeight;
   }
 }
+
+window.saveContractAsPDF = function(e) {
+  // Encontra o elemento <code> mais próximo ao botão de download clicado
+  const codeElement = e.target.closest('pre').querySelector('code');
+
+  if (codeElement) {
+    // Captura todo o texto dentro do elemento <code>
+    const contratoMarkdown = codeElement.innerText;
+
+    // Inicializa um novo jsPDF
+    const doc = new window.jspdf.jsPDF();
+
+    // Se você tem acesso à fonte Inter via URL, você pode tentar algo assim:
+    // doc.addFont('URL_TO_INTER_FONT', 'Inter', 'normal');
+    // doc.setFont('Inter');
+
+    // Se não, você pode usar uma fonte padrão:
+    doc.setFont('Archivo'); // Times é uma fonte serif comum que parece mais "limpa" que Courier
+
+    // Adicionar margem e quebrar linhas longas
+    const margemEsquerda = 10;
+    const margemTopo = 10;
+    const larguraTexto = doc.internal.pageSize.width - 2 * margemEsquerda;
+
+    // Método jsPDF para dividir o texto em várias linhas:
+    const linhas = doc.splitTextToSize(contratoMarkdown, larguraTexto);
+
+    // Adiciona o texto ao documento PDF com espaçamento de linha ajustado
+    const alturaLinha = 7; // Ajuste conforme necessário
+    let cursorY = margemTopo;
+    linhas.forEach(function(linha, i) {
+      if (cursorY > doc.internal.pageSize.height - 20) { // -20 para manter a margem inferior
+        doc.addPage();
+        cursorY = margemTopo;
+      }
+      doc.text(margemEsquerda, cursorY, linha);
+      cursorY += alturaLinha;
+    });
+
+    // Salva o PDF com um nome de arquivo
+    doc.save('Contrato_Generation.pdf');
+  }
+};
